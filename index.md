@@ -1,6 +1,12 @@
-## Welcome to GitHub Pages
+## About me
 
-You can use the [editor on GitHub](https://github.com/lena-kilian/lena-kilian.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Currently studying at the [University of Leeds](https://www.leeds.ac.uk).
+
+### Research interests
+
+- first interest
+- second interest
+- etc. 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
