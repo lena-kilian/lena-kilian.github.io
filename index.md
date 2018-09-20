@@ -1,6 +1,6 @@
 ## About me
 
-Currently studying at the [University of Leeds](https://www.leeds.ac.uk).
+Studying at the [University of Leeds](https://www.leeds.ac.uk).
 
 ### Research interests
 
