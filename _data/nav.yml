@@ -1,8 +1,4 @@
-docs_list_title: ACME Documentation
+docs_list_title: Menu
 docs:
 
 - title: Home
-  url: https://lena-kilian.github.io/
-
-- title: CW1
-  url: https://lena-kilian.github.io/GEOG5995M_CW1/GEOG5995M_CW1.html
