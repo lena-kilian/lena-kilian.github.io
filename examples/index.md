@@ -1,3 +1,3 @@
-# lena-kilian.github.io
+# Coding Examples
 
 this is where the coursework goes
