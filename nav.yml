@@ -1,12 +1,12 @@
-- title: "Home"
+title: "Home"
   href: "/"
 
-- title: "News"
+title: "News"
   href: "/news/"
 
-- title: "Snippets"
+title: "Snippets"
   subcategories:
-    - subtitle: "Example1"
+    subtitle: "Example1"
       subhref: "#"
-    - subtitle: "Example2"
+    subtitle: "Example2"
       subhref: "#"
