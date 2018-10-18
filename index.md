@@ -15,5 +15,5 @@ Studying at the [University of Leeds](https://www.leeds.ac.uk).
 - [Programming for Social Science - Assignment 1](GEOG5995M_CW1/GEOG5995M_CW1.md)
 
 
-help: [http://jmcglone.com/guides/github-pages/][http://jmcglone.com/guides/github-pages/]
+# help: [http://jmcglone.com/guides/github-pages/][http://jmcglone.com/guides/github-pages/]
 
