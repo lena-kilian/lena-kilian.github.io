@@ -1,3 +1,5 @@
+menu_list_title: Menu
+items:
 - title: "Home"
   href: "/"
 
