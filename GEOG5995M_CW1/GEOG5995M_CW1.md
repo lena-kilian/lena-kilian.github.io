@@ -3,6 +3,6 @@
 
 ## CW1 
 
-[Link to Animtation Code](original_animation.py)
+[Download Animtation Code](original_animation.py)
 
-[Link to Class Code](agent_framework.py)
+[Download Agent Class Code](agent_framework.py)
