@@ -1,5 +1,5 @@
 ## Menu
-- [Home](https://lena-kilian.github.io/)
+- **Home**
 - [Coursework Examples](https://lena-kilian.github.io/GEOG5995M_CW1/GEOG5995M_CW1.html)
 
 ### About me
