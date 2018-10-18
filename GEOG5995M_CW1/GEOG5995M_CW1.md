@@ -3,6 +3,6 @@
 
 ## CW1 
 
-![Link to Animtation Code](GEOG5995M_CW1/original_animation.py)
+[Link to Animtation Code](original_animation.py)
 
-![Link to Class Code](GEOG5995M_CW1/agent_framework.py)
+[Link to Class Code](agent_framework.py)
