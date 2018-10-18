@@ -1,3 +1,8 @@
+## Menu
+
+[Home](https://lena-kilian.github.io/)
+[Coursework Examples](https://lena-kilian.github.io/GEOG5995M_CW1/GEOG5995M_CW1.html)
+
 ## CW1 
 
 [Download Animtation Code](original_animation.py)
