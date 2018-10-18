@@ -8,8 +8,7 @@ Studying at the [University of Leeds](https://www.leeds.ac.uk).
 - second interest
 - etc. 
 
-here is a screenshot:
-![Screenshot](Untitled.gif)
+[this](GEOG5995M_CW1/GEOG5995M_CW1.md) is my coursework
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -35,8 +34,6 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-## CW1 
-![Link to Python Code](GEOG5995M_CW1/original_animation.py)
 
 
 
