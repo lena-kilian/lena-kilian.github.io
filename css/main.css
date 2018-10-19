@@ -24,11 +24,15 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #72bcd4;
+    background: #b3c2c6;
+    padding: 14px 16px;
 }
 h2 {
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #72bcd4;
+    background: #b3c2c6;
+    padding: 14px 16px;
 }
 h3 {
     font-size: 2em;
@@ -40,8 +44,6 @@ p {
     line-height: 1.4em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
-    background: #b3c2c6;
-    padding: 14px 16px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
