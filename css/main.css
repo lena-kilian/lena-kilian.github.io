@@ -4,7 +4,7 @@ body {
 }
     
 nav ul, footer ul {
-    font-family:'Times';
+    font-family:'Helvetica';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -21,25 +21,25 @@ a {
 a:hover {
     color: #99cfe0;
 }
-h1 {
+h1 {Times
     font-size: 3em;
-    font-family:'Times';
+    font-family:'Helvetica';
     color: #333;
 }
 h2 {
     font-size: 2.5em;
-    font-family:'Times';
+    font-family:'Helvetica';
     color: #333;
 }
 h3 {
     font-size: 2em;
-    font-family:'Times';
+    font-family:'Helvetica';
     color: #333;
 }
 p {
     font-size: 1.2em;
     line-height: 1.4em;
-    font-family:'Times';
+    font-family:'';
     color: #333;
     padding: 14px 16px;
 }
