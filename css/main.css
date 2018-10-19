@@ -19,7 +19,7 @@ a {
     color: #b3c2c6;
 }
 a:hover {
-    color: #99cfe0;
+    color: #708c94;
 }
 h1 {Times
     font-size: 3em;
@@ -39,7 +39,7 @@ h3 {
 p {
     font-size: 1.2em;
     line-height: 1.4em;
-    font-family:'';
+    font-family:'Helvetica';
     color: #333;
     padding: 14px 16px;
 }
