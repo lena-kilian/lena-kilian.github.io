@@ -2,15 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    overflow: hidden;
-    background-color: #333;
-}
-footer ul {
+nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
@@ -44,10 +36,12 @@ h3 {
     color: #72bcd4;
 }
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.4em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
+    background: #e4f2f7;
+    padding: 14px 16px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
