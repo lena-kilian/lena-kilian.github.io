@@ -3,7 +3,15 @@ body {
     width: 70%;
 }
     
-nav ul, footer ul {
+nav ul {
+    font-family:'Helvetica';
+    background: #f6f8f8;
+    padding: 14px 16px;
+    list-style: none;
+    font-weight: bold;
+    overflow: hidden;
+}
+footer ul {
     font-family:'Helvetica';
     padding: 0px;
     list-style: none;
@@ -39,7 +47,7 @@ h3 {
 p {
     font-size: 1.2em;
     line-height: 1.4em;
-    font-family:'Helvetica';
+    font-family:'Sans Serif';
     color: #333;
     padding: 14px 16px;
 }
