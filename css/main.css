@@ -9,7 +9,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: block;
+    display: inline;
     margin-right: 20px;
 }
 a {
@@ -17,7 +17,7 @@ a {
     color: #99cfe0;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: #b3c2c6;
 }
 h1 {
     font-size: 3em;
