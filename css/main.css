@@ -1,32 +1,29 @@
+  .header {
+    grid-area: hd;
+}
+.footer {
+    grid-area: ft;
+}
+.content {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sd;
+}
+    
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+      "hd hd hd hd   hd   hd   hd   hd   hd"
+      "sd sd sd main main main main main main"
+      "sd sd sd  ft  ft   ft   ft   ft   ft";
+}
+
 body {
     margin: 60px auto;
     width: 70%;
-  .wrapper {
-        display: grid;
-    grid-gap: 10px;
-        grid-template-columns: 100px 100px 100px;
-    }
-
-    .box {
-        border-radius: 5px;
-        padding: 20px;
-    }
-
-    .a {
-        grid-column: 1 / span 4;
-        grid-row: 1;
-    }
-    .b {
-        grid-column: 1;
-        grid-row: 2 / span 2;
-    }
-    .c {
-        grid-column: 2 / span 3;
-        grid-row: 2;
-    }
-    .d {
-        grid-column: 2 / span 3;
-        grid-row: 3;
 }
     
 nav ul, footer ul {
