@@ -16,20 +16,20 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #333;
+    color: #b3c2c6;
 }
 a:hover {
-    color: #b3c2c6;
+    color: #99cfe0;
 }
 h1 {
     font-size: 3em;
     font-family:'Times';
-    color: #99cfe0;
+    color: #333;
 }
 h2 {
     font-size: 2.5em;
     font-family:'Times';
-    color: #99cfe0;
+    color: #333;
 }
 h3 {
     font-size: 2em;
