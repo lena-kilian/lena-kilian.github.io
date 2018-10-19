@@ -1,17 +1,20 @@
+body {
+    margin: 60px auto;
+    width: 70%;
   .header {
     grid-area: hd;
-}
-.footer {
+  }
+  .footer {
     grid-area: ft;
-}
-.content {
+  }
+  .content {
     grid-area: main;
-}
-.sidebar {
+  }
+  .sidebar {
     grid-area: sd;
-}
-    
-.wrapper {
+  }
+  
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -19,11 +22,7 @@
       "hd hd hd hd   hd   hd   hd   hd   hd"
       "sd sd sd main main main main main main"
       "sd sd sd  ft  ft   ft   ft   ft   ft";
-}
-
-body {
-    margin: 60px auto;
-    width: 70%;
+  }
 }
     
 nav ul, footer ul {
