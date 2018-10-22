@@ -1,3 +1,4 @@
 ## About me
 
-hi this is the markdown!!!
+- Short bibliography
+- Research interests
