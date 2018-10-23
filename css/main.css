@@ -17,10 +17,6 @@ nav ul {
   overflow: hidden;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
-
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -54,6 +50,10 @@ nav ul {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 footer ul {
