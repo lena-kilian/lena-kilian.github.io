@@ -41,7 +41,7 @@ body {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #ffbf00;
   color: #ffffff;
 }
 
@@ -91,7 +91,7 @@ a {
     color: #333;
 }
 a:hover {
-    color: red;
+    color: #ffbf00;
 }
 h1 {Times
     font-size: 3em;
