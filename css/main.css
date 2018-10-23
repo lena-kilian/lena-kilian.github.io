@@ -3,20 +3,30 @@ body {
     width: 70%;
 }
     
-nav ul {
-    font-family:'Helvetica';
-    background: #f6f8f8;
-    padding: 14px 16px;
-    list-style: none;
-    font-weight: bold;
-    overflow: hidden;
+ /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
 }
 
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
+/* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -28,6 +38,12 @@ nav ul {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -52,9 +68,10 @@ nav ul {
   background-color: #ddd;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} 
 
 footer ul {
     font-family:'Helvetica';
