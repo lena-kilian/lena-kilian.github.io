@@ -17,6 +17,10 @@ nav ul {
   overflow: hidden;
 }
 
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
