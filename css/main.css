@@ -7,7 +7,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family: Arial;
+  font-family:'Helvetica';
 }
 
 /* Links inside the navbar */
@@ -80,16 +80,16 @@ footer ul {
     font-weight: bold;
     overflow: hidden;
 }
-nav ul li, footer ul li {
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
 a {
     text-decoration: none;
-    color: #b3c2c6;
+    color: #333;
 }
 a:hover {
-    color: #708c94;
+    color: red;
 }
 h1 {Times
     font-size: 3em;
