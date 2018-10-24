@@ -126,10 +126,11 @@ code {
 }
 
 pre code {
-  background-color: #eee;
+  background-color: #e4e4e4;
   border: 1px solid #999;
   display: block;
   padding: 20px;
+  white-space: pre;
 }
 
 footer {
