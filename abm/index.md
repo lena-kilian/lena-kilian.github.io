@@ -1,13 +1,13 @@
 # Projects
 
-## Agent-based modelling using Python
+# Agent-based modelling using Python
 
 This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
 Python and text files can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
-
-### Creating the class
+## 1 The Agent Framework
+## 1.1 Creating the Class
 
 First, the `random` and `copy` packages must be imported. 
 
@@ -41,6 +41,8 @@ class Agents:
         # changing print function
         return (f"[{self.x_position}, {self.y_position}]")
 ```
+
+## 1.2 Building Functions for the Class
 
 Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
@@ -100,3 +102,9 @@ In a similar manner, once an agent has stored 150 units, the they will regurtita
 ### NEED TO CHANGE FUNCTION NAME!!!
 # NEED TO CHANGE FUNCTION NAME!!!
 
+### 2 Testing 
+## 2.1 Creating a Mock Framework
+
+## 2.2 Creating Test Functions
+
+### 3 Building the Animation
