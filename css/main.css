@@ -82,6 +82,7 @@ footer ul {
     font-weight: bold;
     overflow: hidden;
     font-size: 1.2em;
+    text-decoration: none;
 }
 
 footer ul li {
