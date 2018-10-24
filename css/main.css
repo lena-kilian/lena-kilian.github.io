@@ -122,8 +122,14 @@ p {
 }
 
 code {
-    padding: 18px 16px;
     background-color: #bcbcbc;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
 }
 
 footer {
