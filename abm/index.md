@@ -6,19 +6,6 @@ This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/comput
 
 Python and text files can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
-*one*
-**two**
-***three***
-****four****
--five-
---six--
-_seven_
-__eight__
-___nine___
-____ten____
-#eleven#
-##twelve##
-
 
 ### Creating the class
 
@@ -90,6 +77,9 @@ In addition to being able to move around the environment, agents are able to int
 
 In a similar manner, once an agent has stored 150 units, the they will regurtitate 50 units onto the point in they environment they stand on. These units will become available for other agents to `eat` if they land on said point in the environment. 
 
+
+# NEED TO CHANGE FUNCTION NAME!!!
+### NEED TO CHANGE FUNCTION NAME!!!
 ```
     def eat(self):
         if self.environment[self.y_position][self.x_position] > 10:
@@ -107,3 +97,6 @@ In a similar manner, once an agent has stored 150 units, the they will regurtita
             self.environment[self.y_position][self.x_position] += 50
             self.store -= 50
 ```
+### NEED TO CHANGE FUNCTION NAME!!!
+# NEED TO CHANGE FUNCTION NAME!!!
+
