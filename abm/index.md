@@ -4,7 +4,7 @@
 
 This model is part of an assessment for GEOG5995. It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
-Python and text files are available [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1)
+Python and text files can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
 ### Creating the class
 
@@ -18,7 +18,10 @@ import copy
 The `class` was defined as Agents. An initiating function was created. 
 
 # NEED TO FINISH THIS!!!
+### NEED TO FINISH THIS!!!
 Each agent has an x-coordinate, y-coordinate _________ 
+### NEED TO FINISH THIS!!!
+# NEED TO FINISH THIS!!!
 
 Moreover, the `print` was overwritten, such that it would print the x- and y-coordinates of the printed agent. 
 
@@ -38,7 +41,7 @@ class Agents:
         return (f"[{self.x_position}, {self.y_position}]")
 ```
 
-Thereafter, `moveagent` was defined to randomly
+Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
 ```
    def moveagent(self):
@@ -66,4 +69,26 @@ Thereafter, `moveagent` was defined to randomly
                     self.y_position = (self.y_position + 1) % 101
                 elif b < 0.67:
                     self.y_position = (self.y_position - 1) % 101
+```
+
+In addition to being able to move around the environment, agents are able to interact with it by eating it or regurgitating some grass they had previously eaten onto it. With each eating iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environemnt, the agent will eat the remaining value and the environemnt will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailble to `share` (see below) and to slow down the storage accumulation. 
+
+In a similar manner, once an agent has stored 150 units, the they will regurtitate 50 units onto the point in they environment they stand on. These units will become available for other agents to `eat` if they land on said point in the environment. 
+
+```
+    def eat(self):
+        if self.environment[self.y_position][self.x_position] > 10:
+            self.environment[self.y_position][self.x_position] -= 10
+            self.store += 10
+        else:
+            self.store += self.environment[self.y_position][self.x_position]
+            self.environment[self.y_position][self.x_position] = 0
+        if self.store >= 100:
+            ''' makes them eat it properly, rather than just store --> makes grass disappaear''' 
+            self.store -= 5
+        
+    def throw_up(self):
+        if self.store > 150:
+            self.environment[self.y_position][self.x_position] += 50
+            self.store -= 50
 ```
