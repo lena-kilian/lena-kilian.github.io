@@ -112,13 +112,20 @@ h3 {
     color: #333;
     padding: 14px 16px;
 }
-p {
+
+p1 {
     font-size: 1.2em;
     line-height: 1.4em;
     font-family:'Sans Serif';
     color: #333;
     padding: 14px 16px;
 }
+
+p2 {
+    padding: 14px 16px;
+    background-color: #bcbcbc;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
