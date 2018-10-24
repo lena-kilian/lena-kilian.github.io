@@ -45,6 +45,7 @@ class Agents:
 
 Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
+# NEED TO ADD INFO ABOUT THE REMAINDER!!!
 
 ```
    def moveagent(self):
