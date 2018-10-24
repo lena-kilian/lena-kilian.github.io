@@ -7,7 +7,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family:'Arial';
+  font-family:'Sans Serif';
   color: #ffffff;
 }
 
@@ -76,7 +76,7 @@ body {
 } 
 
 footer ul {
-    font-family:'Arial';
+    font-family:'Sans Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -114,8 +114,8 @@ h3 {
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 1em;
+    line-height: 1em;
     font-family:'Sans Serif';
     color: #333;
     padding: 14px 16px;
@@ -131,7 +131,7 @@ pre code {
   padding: 20px;
   margin-left: 2.5em;
   margin-right: 2.5em;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 footer {
