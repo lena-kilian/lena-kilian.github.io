@@ -90,12 +90,13 @@ footer ul li {
     
 }
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #333;
 }
 
 a:hover {
     color: #ffbf00;
+    text-decoration: underline;
 }
 
 h1 {Times
