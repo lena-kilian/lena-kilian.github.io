@@ -31,7 +31,7 @@ class Agents:
 
 Each agent has an x-coordinate, y-coordinate, access to the environment, a store, and access to other agents' positions. Definitions for these variables are in table 1. 
 
-*Table 1: Variables from `_init_` function*
+*Table 1: Variable definitions from the `__init__` function.*
 
 | Variable || Definition |
 | - | - | - |
@@ -58,8 +58,7 @@ Thereafter, `moveagent` was defined to randomly move the agent around the enviro
 
 ```
    def moveagent(self):
-        # move agent randomly
-        if self.store <= 100:
+        if self.store <= 100: 
             a = random.random()
             b = random.random()
             if a <= 0.33:
