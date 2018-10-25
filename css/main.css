@@ -145,6 +145,9 @@ pre code {
 table {
     margin-left: 1em;
     margin-right: 1em;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 14px;
 }
 
 footer {
