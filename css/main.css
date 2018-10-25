@@ -146,6 +146,8 @@ table {
     font-size: 1.2em;
     text-align: left;
     padding: 14px;
+    border-collapse: separate;
+    border-spacing: 15px;
 }
 
 th, td {
