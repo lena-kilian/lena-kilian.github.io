@@ -152,9 +152,8 @@ table {
 
 th, td {
     vertical-align: center;
-    height: 50px;
     border-bottom: 1px solid #333;
-    padding: 5px;
+    padding: 10px;
 }
 
 th {
