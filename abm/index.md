@@ -4,9 +4,9 @@ This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/comput
 
 The final model will create an animation as depicted in *Figure 1*
 
-![Figure 1](animation3.gif)
-
-*Figure 1: Animated illustration of the final model.*
+|![Figure 1](animation3.gif)|
+|-|
+|*Figure 1: Animated illustration of the final model.*|
 
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
