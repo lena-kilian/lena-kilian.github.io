@@ -126,7 +126,7 @@ p {
     line-height: 1.2em;
     font-family:'Sans Serif';
     color: #333;
-    padding: 14px;
+    padding: 14px 0px;
 }
 
 code {
