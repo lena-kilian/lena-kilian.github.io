@@ -152,9 +152,9 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
     padding: 14px
     vertical-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 footer {
