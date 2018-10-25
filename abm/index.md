@@ -17,8 +17,9 @@ import copy
 
 The `class` was defined as Agents. An initiating function was created. 
 
-Each agent has an x-coordinate, y-coordinate, access to the environment, a store, and access to other agents' positions. Definitions for these variables are in the table below. 
+Each agent has an x-coordinate, y-coordinate, access to the environment, a store, and access to other agents' positions. Definitions for these variables are in table 1. 
 
+*Table 1: Variables from `_init_` function*
 | Variable || Definition |
 | - | - | - |
 | `x_position` || An agent's x-coordinate |
