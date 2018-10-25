@@ -143,18 +143,17 @@ pre code {
 }
 
 table {
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
     font-size: 1.2em;
     text-align: left;
     padding: 14px;
 }
 
-table, th, td {
-    padding: 14px
+th, td {
     vertical-align: center;
-    border-bottom: 1px solid #333;
     height: 50px;
+    border-bottom: 1px solid #333;
 }
 
 th {
