@@ -153,10 +153,13 @@ table {
 table, th, td {
     padding: 14px
     vertical-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
+    height: 50px;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+th {
+    background-color: #f4f4f4;
+}
 
 footer {
     border-top: 1px solid #d5d5d5;
