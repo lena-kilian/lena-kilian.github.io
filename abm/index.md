@@ -19,13 +19,13 @@ The `class` was defined as Agents. An initiating function was created.
 
 Each agent has an x-coordinate, y-coordinate, access to the environment, a store, and access to other agents' positions. Definitions for these variables are in the table below. 
 
-| Variable | Definition |
-| - | - |
-| `x_position` | An agent's x-coordinate |
-| `y-position` | An agent's y-coordinate |
-| `environment` | The environment: It is saved as a list containing lists of values, where the position of each list indicates the y-co-ordinate of said value, while the position of a value within each sub-list denotes the value's x-coordinate. Values here refer to how much grass is on a point in the environment. Visually, values respond to different colours. |
-| `store` | The amount of grass an agent has gathered |
-| `all_agents` | A list of all agents' positions |
+| Variable || Definition |
+| - | - | - |
+| `x_position` || An agent's x-coordinate |
+| `y-position` || An agent's y-coordinate |
+| `environment` || The environment: It is saved as a list containing lists of values, where the position of each list indicates the y-co-ordinate of said value, while the position of a value within each sub-list denotes the value's x-coordinate. Values here refer to how much grass is on a point in the environment. Visually, values respond to different colours. |
+| `store` || The amount of grass an agent has gathered |
+| `all_agents` || A list of all agents' positions |
 
  
 
