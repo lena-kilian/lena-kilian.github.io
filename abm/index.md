@@ -2,7 +2,14 @@
 
 This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
-Python and text files can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
+The final model will create an animation as depicted in *Figure 1*
+
+![Figure 1](animation1.gif)
+
+*Figure 1: Animated illustration of the final model.*
+
+Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
+
 
 ## 1 The Agent Framework
 ### 1.1 Creating the class
@@ -54,7 +61,7 @@ Moreover, the `print` was overwritten, such that it would print the x- and y-coo
 
 Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
-# NEED TO ADD INFO ABOUT THE REMAINDER!!!
+To prevent agents from # NEED TO ADD INFO ABOUT THE REMAINDER!!!
 
 ```
    def moveagent(self):
@@ -89,7 +96,7 @@ Thereafter, `moveagent` was defined to randomly move the agent around the enviro
 
 In addition to being able to move around the environment, agents are able to interact with it by eating it or regurgitating some grass they had previously eaten onto it. With each `eat` iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environemnt, the agent will eat the remaining value and the environemnt will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailble to `share` (see below) and to slow down the storage accumulation. 
 
-In a similar manner, once an agent has stored 150 units, the they will `regurtitate` 50 units onto the point in they environment they stand on. These units will become available for other agents to `eat` if they land on said point in the environment. 
+In a similar manner, using `regurgitate` once an agent has stored more than 150 units, the their store will decrease by 50 units. The point in they environment they stand on will then increase by 26 units, while the surrounding 8 points will each gain 3 units. These units will become available for other agents to `eat` if they land on said points in the environment. 
 
 ```
     def eat(self):
@@ -105,7 +112,15 @@ In a similar manner, once an agent has stored 150 units, the they will `regurtit
 
     def regurgitate(self):
         if self.store > 150:
-            self.environment[self.y_position][self.x_position] += 50
+            self.environment[self.y_position][self.x_position] += 26
+            self.environment[self.y_position - 1][self.x_position - 1] += 3
+            self.environment[self.y_position - 1][self.x_position + 1] += 3
+            self.environment[self.y_position - 1][self.x_position] += 3
+            self.environment[self.y_position + 1][self.x_position - 1] += 3
+            self.environment[self.y_position + 1][self.x_position + 1] += 3
+            self.environment[self.y_position + 1][self.x_position] += 3
+            self.environment[self.y_position][self.x_position - 1] += 3
+            self.environment[self.y_position][self.x_position + 1] += 3
             self.store -= 50
 ```
 
