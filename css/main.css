@@ -151,6 +151,12 @@ table {
     border: 1px solid black
 }
 
+table, th, td {
+    border: 1px solid black;
+    padding: 14px
+    vertical-align: center;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
