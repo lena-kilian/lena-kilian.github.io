@@ -126,7 +126,7 @@ p {
     line-height: 1.2em;
     font-family:'Sans Serif';
     color: #333;
-    padding: 5px 16px;
+    padding: 0px 16px;
 }
 
 code {
@@ -145,7 +145,7 @@ pre code {
 table {
     font-size: 1.2em;
     text-align: left;
-    padding: 5px 16px;
+    padding: 0px 16px;
     border-collapse: separate;
     border-spacing: 0px;
 }
