@@ -8,7 +8,12 @@ The final model will create an animation as depicted in *Figure 1*
 
 *Figure 1: Animated illustration of the final model.*
 
+_*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
+
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
+
+## Sections:
+- <a name="1.2"></a>Section 1.2
 
 
 ## 1 The Agent Framework
@@ -57,13 +62,11 @@ Moreover, the `print` was overwritten, such that it would print the x- and y-coo
         return (f"[{self.x_position}, {self.y_position}]")
 ```
 
-### 1.2 Moving around the environment
+### [1.2 Moving around the environment](#1.2)
 
 Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
-To prevent agents from 
-
-# NEED TO ADD INFO ABOUT THE REMAINDER!!!
+To prevent agents from leaving the grid, a torus was installed. This was done using a remainder function. In this way, agents exiting the grid on one side, will re-enter it on the opposite side.
 
 ```
    def moveagent(self):
