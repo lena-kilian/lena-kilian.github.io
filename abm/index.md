@@ -13,7 +13,8 @@ _*Notes: This figure contains some snapshots of the model at different times and
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
 ## Sections:
-- <a name="1.2"></a>Section 1.2
+- [1.2 Moving around the environment](#1.2)
+
 
 
 ## 1 The Agent Framework
@@ -62,7 +63,7 @@ Moreover, the `print` was overwritten, such that it would print the x- and y-coo
         return (f"[{self.x_position}, {self.y_position}]")
 ```
 
-### [1.2 Moving around the environment](#1.2)
+### <a name="1.2"></a>1.2 Moving around the environment
 
 Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
