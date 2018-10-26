@@ -10,9 +10,9 @@ The final model will create an animation as depicted in *Figure 1*
 
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
 
-Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
+Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). Please note that all indentations within this online representation of the code are intentional. In other words, the functions in sections 1 and 2 are defined *within* a class and are therefore indented. 
 
-**Sections:**
+### Sections:
 
 [1 The Agent Framework](#1)
 - [1.1 Creating the class](#1.1)
@@ -54,7 +54,7 @@ class Agents:
 Each agent has an x-coordinate, y-coordinate, access to the environment, a store, and access to other agents' positions. Definitions for these variables are in table 1. 
 
 
-*Table 1: Variable definitions from the `__init__` function.*
+*<a name="T1"></a>Table 1: Variable definitions from the `__init__` function.*
 
 | Variable || Definition |
 | - | - | - |
@@ -140,7 +140,7 @@ In a similar manner, using `regurgitate` once an agent has stored more than 150 
             self.store -= 50
 ```
 
-`grass_grow` is slightly different in that the environment is accessed through an agent, but the agent is not actually manipulated.
+Similarly, `grass_grow` is an environmental manipulations. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. 
 
 ```
     def grass_grow(self):
@@ -154,25 +154,27 @@ In a similar manner, using `regurgitate` once an agent has stored more than 150 
 
 ### <a name="1.4"></a>1.4 Interacting with other agents
 
-sharing stock! --> so needs access to other agents' stock information
+Just as the agents are able to interact with the environment, they are able to interact with other agents. By providing agents with other agents' spatial location data (see `all_agents` in [table 1](#T1)) we are able to automate distance calculations (using Pythagoras' theorem) between each agent pair.
+
+```
+    def distance(self, other_agent):
+        return ((self.x_position - other_agent.x_position)**2 + 
+                (self.y_position - other_agent.y_position)**2)**0.5
+```
+
+Calculating the distances between agents can be useful for a variety of things. Here, they were used to indicate whether an agent would `share` their stock with another agent. If agent A in within a certain range of agent B (range is defined byt the variable `neighbourhood`), their stocks will average to their mean stock. 
 
 ```
     def share(self, neighbourhood): 
-        # share resources with agents within neighbourhood range
         for agent in self.all_agents:
             distance_btw = self.distance(agent)
             if distance_btw <= neighbourhood:
                 self.store = (self.store + agent.store) / 2
                 agent.store = copy.copy(self.store)
 ```
+Moreover, the distance function can be used to calculate minimum and maximum distances beween all agents. Particularly for the minimum distance it is important to ensure that an agent is not calculating their distance to themselves. Therefore, 2 `for` loops were used, where the first one ran through all agents, *i* through *n*, while the second one only started at *i + 1*.
 
-needs access to other agents' spatial information!!
 ```
-    def distance(self, other_agent):
-        # calculate distance between agents
-        return ((self.x_position - other_agent.x_position)**2 + 
-                (self.y_position - other_agent.y_position)**2)**0.5
-
     def min_distance(self):
         # calculating the minimum distance between all agents
         return min(self.all_agents[i].distance(self.all_agents[j])
@@ -184,11 +186,7 @@ needs access to other agents' spatial information!!
         return max(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
-
-       
-
 ```
-
 
 ## <a name="2"></a>2 Testing 
 ### <a name="2.1"></a>2.1 Creating a mock framework
