@@ -12,7 +12,7 @@ _*Notes: This figure contains some snapshots of the model at different times and
 
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
-## Sections:
+**Sections:**
 [1 The Agent Framework](#1)
 - [1.1 Creating the class](#1.1)
 - [1.2 Moving around the environment](#1.2)
