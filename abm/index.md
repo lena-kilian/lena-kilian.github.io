@@ -13,14 +13,17 @@ _*Notes: This figure contains some snapshots of the model at different times and
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1).
 
 **Sections:**
+
 [1 The Agent Framework](#1)
 - [1.1 Creating the class](#1.1)
 - [1.2 Moving around the environment](#1.2)
 - [1.3 Interacting with the environment](#1.3)
 - [1.4 Interacting with other agents](#1.4)
+
 [2 Testing](#2)
 - [2.1 Creating a mock framework](#2.1)
 - [2.2 Creating test functions](#2.2)
+
 [3 Building the animation](#3)
 
 
