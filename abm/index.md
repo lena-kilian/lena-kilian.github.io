@@ -140,7 +140,7 @@ In a similar manner, using `regurgitate` once an agent has stored more than 150 
             self.store -= 50
 ```
 
-Similarly, `grass_grow` is an environmental manipulations. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. 
+Similarly, `grass_grow` is an environmental manipulations. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. Moreover, is a value within the environment was over 255 units, `grass_grow` would not impact the enviornment. This value was chosen as it is the highest value in the environment at the start.
 
 ```
     def grass_grow(self):
@@ -172,7 +172,7 @@ Calculating the distances between agents can be useful for a variety of things. 
                 self.store = (self.store + agent.store) / 2
                 agent.store = copy.copy(self.store)
 ```
-Moreover, the distance function can be used to calculate minimum and maximum distances beween all agents. Particularly for the minimum distance it is important to ensure that an agent is not calculating their distance to themselves. Therefore, 2 `for` loops were used, where the first one ran through all agents, *i* through *n*, while the second one only started at *i + 1*.
+Moreover, the distance function can be used to calculate minimum and maximum distances beween all agents. Particularly for the minimum distance it is important to ensure that an agent is not calculating their distance to themselves. Therefore, two `for` loops were used, where the first one ran through all agents, *i* through *n*, while the second one only started at *i + 1*.
 
 ```
     def min_distance(self):
@@ -191,6 +191,137 @@ Moreover, the distance function can be used to calculate minimum and maximum dis
 ## <a name="2"></a>2 Testing 
 ### <a name="2.1"></a>2.1 Creating a mock framework
 
+In order to test functions, an expected output needs to be provided. For instance, as agents' starting points were randomised in the original model, a mock framework was created in which this randomisation was removed. Although all functions from [Section 1](#1) were tested, this section will only go through the functions which had to be altered for testing. The full mock framework can be found [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). The packages used in the mock framework were identical with those used in the actual framework.
+
+As already mentioned, starting points were de-randomised. For this, `__init__` was altered to provide non-random x- and y-coordinates. 
+
+```
+class Agents:
+    
+    def __init__(self, environment, all_agents):
+        # Initiating with non-random starting point
+        self.x_position = 50
+        self.y_position = 50
+        self.environment = environment
+        self.store = 0
+        self.all_agents = all_agents
+```
+
+Moreover, the `moveagent` function was changed, to force the agent to move in each iteration. Earlier, there was a 0.33 chance that the agent would not move on a given axis. To test with certainty that agents can actually move, this was removed in the mock framework. Moreover, the ability of agents with a store of 100 units or more to move twice was altered. While they are atill able to move twice, the direction of their movement was changed to be identical for both iterations. 
+
+```
+    def moveagent(self):
+        a = random.random()
+        b = random.random()
+        if self.store <= 100:
+            if a <= 0.33:
+                self.x_position = (self.x_position + 1) % 101
+            else:
+                self.x_position = (self.x_position - 1) % 101
+            if b <= 0.33:
+                self.y_position = (self.y_position + 1) % 101
+            else:
+                self.y_position = (self.y_position - 1) % 101
+        else:
+            for i in range(2):
+                if a < 0.33:
+                    self.x_position = (self.x_position + 1) % 101
+                else:
+                    self.x_position = (self.x_position - 1) % 101
+                if b < 0.33:
+                    self.y_position = (self.y_position + 1) % 101
+                else:
+                    self.y_position = (self.y_position - 1) % 101
+```
+
+Lastly, randomisation was removed from `grass_grow`, to test if this function is actually able to manipulate the environment as wanted. 
+
+```
+    def grass_grow(self):
+        for i in range(len(self.environment)):
+            for j in range(len(self.environment[i])):
+                if self.environment[i][j] < 255:
+                    self.environment[i][j] += 1
+```
+
 ### <a name="2.2"></a>2.2 Creating test functions
+
+To test the mock framework, a testing file was created. In addition to importing `mock_framework`, `pytest` will be needed to run the actual test function. 
+
+```
+import pytest
+import mock_framework
+```
+
+Again, although all functions were tested, I will only present a few examples on this page. Please refer to [test_abm.py](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1) for the full code. 
+
+Because the mock framework defined agents to start at (50, 50) and because `moveagent` would force the agent to move, `test_moveagent` should check if an agent with a store below 100 units should be at (50 +/- 1, 50 +/- 1) after one iteration, while an agent with a higher store should be at (50 +/- 2, 50 +/- 2). 
+
+```
+def test_moveagent():
+    agents = []
+    environment = []
+    while len(agents) < 2:
+        agents.append(mock_framework.Agents(environment, agents))
+    
+    agents[0].store = 0
+    agents[0].moveagent()
+    assert agents[0].y_position == 49 or agents[0].y_position == 51
+    assert agents[0].x_position == 49 or agents[0].x_position == 51
+    
+    agents[1].store = 200
+    agents[1].moveagent()
+    assert agents[1].y_position == 48 or agents[1].y_position == 52
+    assert agents[1].x_position == 48 or agents[1].x_position == 52
+```
+
+In testing, it is important to test for various scenarios. In this case, I therefore tested that both cases (store >= 100 and store < 100) were functioning properly. This was also done for the other functions. For instance, `test_eat` tested for the reduction of units from the environment and the addition of units to the stock for cases of an environmental point having 10+ units and having less than 10 units. Moreover, the aspect of the function in which an agent's stock only increases by 5 units if their (post-eating) store was 100 units or more was tested. 
+
+```
+def test_eat():
+    environment = []
+    list = []
+    while len(list) < 100:
+        list.append(100)
+    while len(environment) < 100:
+        environment.append(list.copy())
+    
+    agents = []
+    while len(agents) < 2:
+        agents.append(mock_framework.Agents(environment, agents))
+    
+    agents[0].eat()
+    assert agents[0].environment[agents[0].y_position][agents[0].x_position] == 90 and agents[0].store == 10
+    
+    agents[0].store = 90
+    agents[0].eat()
+    assert agents[0].environment[agents[0].y_position][agents[0].x_position] == 80 and agents[0].store == 95
+    
+    agents[0].environment[agents[0].y_position][agents[0].x_position] = 3
+    agents[0].eat()
+    assert agents[0].environment[agents[0].y_position][agents[0].x_position] == 0 and agents[0].store == 98
+```
+
+A final example I would like to highlight here is `test_min_distance`. Here it was particularly importan to test that agents do not calculate their distance from themselves. Additionally I checked that value provided as the miminum distance between all agents was not impacted by the agents' order. Thus, I manipulated the agents' positions and varied the agent pair with the minimum distance. 
+
+```
+def test_min_distance():
+    environment = []
+    agents = []
+    while len(agents) < 3:
+         agents.append(mock_framework.Agents(environment, agents))
+    
+    agents[0].x_position = 4
+    agents[0].y_position = 0
+    agents[1].x_position = 0
+    agents[1].y_position = 3
+    
+    assert agents[0].min_distance() == 5
+    
+    agents[2].x_position = 0
+    agents[2].y_position = 3
+    
+    assert agents[0].min_distance() == 0
+```
 
 ## <a name="3"></a>3 Building the animation
