@@ -112,9 +112,9 @@ To prevent agents from leaving the grid, a torus was installed. This was done us
 
 ### <a name="1.3"></a>1.3 Interacting with the environment
 
-In addition to being able to move around the environment, agents are able to interact with it by eating it or regurgitating some grass they had previously eaten onto it. With each `eat` iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environemnt, the agent will eat the remaining value and the environemnt will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailble to `share` (see below) and to slow down the storage accumulation. 
+In addition to being able to move around the environment, agents are able to interact with it by eating it or regurgitating some grass they had previously eaten onto it. With each `eat` iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environment, the agent will eat the remaining value and the environment will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailable to `share` (see below) and to slow down the storage accumulation. 
 
-In a similar manner, using `regurgitate` once an agent has stored more than 150 units, the their store will decrease by 50 units. The point in they environment they stand on will then increase by 26 units, while the surrounding 8 points will each gain 3 units. These units will become available for other agents to `eat` if they land on said points in the environment. 
+In a similar manner, using `regurgitate` once an agent has stored more than 150 units, their store will decrease by 50 units. The point in the environment they stand on will then increase by 26 units, while the surrounding 8 points will each gain 3 units. These units will become available for other agents to `eat` if they land on said points in the environment. 
 
 ```
     def eat(self):
@@ -142,7 +142,7 @@ In a similar manner, using `regurgitate` once an agent has stored more than 150 
             self.store -= 50
 ```
 
-Similarly, `grass_grow` is an environmental manipulations. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. Moreover, is a value within the environment was over 255 units, `grass_grow` would not impact the enviornment. This value was chosen as it is the highest value in the environment at the start.
+Similarly, `grass_grow` is an environmental manipulations. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurrence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. Moreover, is a value within the environment was over 255 units, `grass_grow` would not impact the environment. This value was chosen as it is the highest value in the environment at the start.
 
 ```
     def grass_grow(self):
@@ -163,8 +163,7 @@ Just as the agents are able to interact with the environment, they are able to i
         return ((self.x_position - other_agent.x_position)**2 + 
                 (self.y_position - other_agent.y_position)**2)**0.5
 ```
-
-Calculating the distances between agents can be useful for a variety of things. Here, they were used to indicate whether an agent would `share` their stock with another agent. If agent A in within a certain range of agent B (range is defined byt the variable `neighbourhood`), their stocks will average to their mean stock. 
+Calculating the distances between agents can be useful for a variety of things. Here, they were used to indicate whether an agent would `share` their stock with another agent. If agent A in within a certain range of agent B (range is defined by the variable `neighbourhood`), their stocks will average to their mean stock. 
 
 ```
     def share(self, neighbourhood): 
@@ -174,7 +173,7 @@ Calculating the distances between agents can be useful for a variety of things. 
                 self.store = (self.store + agent.store) / 2
                 agent.store = copy.copy(self.store)
 ```
-Moreover, the distance function can be used to calculate minimum and maximum distances beween all agents. Particularly for the minimum distance it is important to ensure that an agent is not calculating their distance to themselves. Therefore, two `for` loops were used, where the first one ran through all agents, *i* through *n*, while the second one only started at *i + 1*.
+Moreover, the distance function can be used to calculate minimum and maximum distances between all agents. Particularly for the minimum distance it is important to ensure that an agent is not calculating their distance to themselves. Therefore, two `for` loops were used, where the first one ran through all agents, *i* through *n*, while the second one only started at *i + 1*.
 
 ```
     def min_distance(self):
@@ -209,7 +208,7 @@ class Agents:
         self.all_agents = all_agents
 ```
 
-Moreover, the `moveagent` function was changed, to force the agent to move in each iteration. Earlier, there was a 0.33 chance that the agent would not move on a given axis. To test with certainty that agents can actually move, this was removed in the mock framework. Moreover, the ability of agents with a store of 100 units or more to move twice was altered. While they are atill able to move twice, the direction of their movement was changed to be identical for both iterations. 
+Moreover, the `moveagent` function was changed, to force the agent to move in each iteration. Earlier, there was a 0.33 chance that the agent would not move on a given axis. To test with certainty that agents can actually move, this was removed in the mock framework. Moreover, the ability of agents with a store of 100 units or more to move twice was altered. While they are still able to move twice, the direction of their movement was changed to be identical for both iterations. 
 
 ```
     def moveagent(self):
@@ -304,7 +303,7 @@ def test_eat():
     assert agents[0].environment[agents[0].y_position][agents[0].x_position] == 0 and agents[0].store == 98
 ```
 
-A final example I would like to highlight here is `test_min_distance`. Here it was particularly importan to test that agents do not calculate their distance from themselves. Additionally I checked that value provided as the miminum distance between all agents was not impacted by the agents' order. Thus, I manipulated the agents' positions and varied the agent pair with the minimum distance. 
+A final example I would like to highlight here is `test_min_distance`. Here it was particularly important to test that agents do not calculate their distance from themselves. Additionally I checked that value provided as the minimum distance between all agents was not impacted by the agents' order. Thus, I manipulated the agents' positions and varied the agent pair with the minimum distance. 
 
 ```
 def test_min_distance():
@@ -341,7 +340,7 @@ First, all relevant packages were loaded, and relevant variables and lists were 
 | `neighbourhood` || The maximum distance 2 agents can have to `share` their stock |
 | `agents` || A list containing all agents |
 | `environment` || Same as in [table 1](#T1) |
-| `fig` || A (currently empty) graph, in which the agents and environment will be dispalyed |
+| `fig` || A (currently empty) graph, in which the agents and environment will be displayed |
 
 ```
 import random
@@ -349,7 +348,6 @@ from matplotlib import pyplot
 from matplotlib import animation
 import agent_framework
 import csv
-import time
 
 n = 100
 k = 200
@@ -368,7 +366,7 @@ while len(agents) < n:
 fig = pyplot.figure(figsize=(8, 8))
 ```
 
-Second, an `update` function needs to be defined. This contains all functions we want to occur in the final animation (`move_agent`, `eat`, `regurgitate`, `grass_grow`, `share`). Thus, `update` can be used as a replacement for using the other functions individually. Moreover, `update` scatters each iteration onto `fig`. In order to only dispaly agents' most recent positions, `fig` is also cleared in each iteration of `update`. 
+Second, an `update` function needs to be defined. This contains all functions we want to occur in the final animation (`move_agent`, `eat`, `regurgitate`, `grass_grow`, `share`). Thus, `update` can be used as a replacement for using the other functions individually. Moreover, `update` scatters each iteration onto `fig`. In order to only display agents' most recent positions, `fig` is also cleared in each iteration of `update`. 
 
 ```
 def update(frame_number):
@@ -396,7 +394,13 @@ animation = animation.FuncAnimation(fig, update, frames = k, repeat=False)
 
 ### <a name="3.2"></a>3.2 Alternative endings: Stopping the animation using a generator function
 
-Alternatively, a generator function can be defined. In this case, the function will break the `update` loop in the final animation once an agent tries to `eat` from a point in the environment which contains 0 units. Moreover, a timer was built into the function, which records the seconds taken for the animation to break. 
+As an add-on the animation stopping with a function was timed. Thus `time` had to be imported in addition to the packages from [section 3.1](#3.1).
+
+```
+import time
+```
+
+Thereafter, a generator function was defined, in which the agents, environment and visualisation are updated until there is a point in the environment which contains 0 units of grass. Once this happens, `gen_function` will break the `update` loop. This function was then added to the animation as a measure of length (`frames`) of the animation. As the value assigned to `frames` must be numerical, the generator function was built in a way in which it adds one to variable `a` (here the number of frames), each time the smallest value within the environment is still greater than 0. 
 
 ```
 def gen_function(b = [0]):
