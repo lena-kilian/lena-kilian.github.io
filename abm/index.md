@@ -1,4 +1,4 @@
-# <a name="pagetop"></a>1Agent-based modelling using Python
+# <a name="pagetop"></a>Agent-based modelling using Python
 
 This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
