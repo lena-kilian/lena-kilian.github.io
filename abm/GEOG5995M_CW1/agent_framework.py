@@ -7,8 +7,8 @@ class Agents:
     
     def __init__(self, environment, all_agents):
         # Initiating with random starting point
-        self.x_position = random.randint(0, 99)
-        self.y_position = random.randint(0, 99)
+        self.x_position = random.randint(0, 100)
+        self.y_position = random.randint(0, 100)
         self.environment = environment
         self.store = 0
         self.all_agents = all_agents
@@ -24,23 +24,23 @@ class Agents:
             b = random.random()
             if a <= 0.33:
                 self.x_position = (self.x_position + 1) % 101
-            elif 0.33 < a and a <= 0.67:
+            elif a >= 0.67:
                 self.x_position = (self.x_position - 1) % 101
             if b <= 0.33:
                 self.y_position = (self.y_position + 1) % 101
-            elif 0.33 < b and b <= 0.67:
+            elif b >= 0.67:
                 self.y_position = (self.y_position - 1) % 101
         else:
             for i in range(2):
                 a = random.random()
                 b = random.random()
-                if a < 0.33:
+                if a <= 0.33:
                     self.x_position = (self.x_position + 1) % 101
-                elif a < 0.67:
+                elif a >= 0.67:
                     self.x_position = (self.x_position - 1) % 101
-                if b < 0.33:
+                if b <= 0.33:
                     self.y_position = (self.y_position + 1) % 101
-                elif b < 0.67:
+                elif b >= 0.67:
                     self.y_position = (self.y_position - 1) % 101
                
     def eat(self):
@@ -51,12 +51,19 @@ class Agents:
             self.store += self.environment[self.y_position][self.x_position]
             self.environment[self.y_position][self.x_position] = 0
         if self.store >= 100:
-            ''' makes them eat it properly, rather than just store --> makes grass disappaear''' 
             self.store -= 5
         
-    def throw_up(self):
+    def regurgitate(self):
         if self.store > 150:
-            self.environment[self.y_position][self.x_position] += 50
+            self.environment[self.y_position][self.x_position] += 26
+            self.environment[self.y_position - 1][self.x_position - 1] += 3
+            self.environment[self.y_position - 1][self.x_position + 1] += 3
+            self.environment[self.y_position - 1][self.x_position] += 3
+            self.environment[self.y_position + 1][self.x_position - 1] += 3
+            self.environment[self.y_position + 1][self.x_position + 1] += 3
+            self.environment[self.y_position + 1][self.x_position] += 3
+            self.environment[self.y_position][self.x_position - 1] += 3
+            self.environment[self.y_position][self.x_position + 1] += 3
             self.store -= 50
 
     def grass_grow(self):
@@ -68,18 +75,18 @@ class Agents:
                         self.environment[i][j] += 1
        
     def distance(self, other_agent):
-        # calculate distance between agents
+        # calculate distance between two agents
         return ((self.x_position - other_agent.x_position)**2 + 
                 (self.y_position - other_agent.y_position)**2)**0.5
 
     def min_distance(self):
-        # calculating the minimum distance between all agents
+        # calculating the minimum distance between all agent pairs
         return min(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
     
     def max_distance(self):
-        # calculating the minimum distance between all agents
+        # calculating the minimum distance between all agent pairs
         return max(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
