@@ -1,4 +1,4 @@
-# Agent-based modelling using Python
+# <a name="pagetop"></a>1Agent-based modelling using Python
 
 This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
@@ -25,6 +25,8 @@ Python and text files with the full code can be downloaded [here](https://github
 - [2.2 Creating test functions](#2.2)
 
 [3 Building the animation](#3)
+- [3.1 Basic animation stopping after *k* iterations](#3.1)
+- [3.2 Alternative endings: Stopping the animation using a generator function](#3.2)
 
 
 ## <a name="1"></a>1 The Agent Framework
@@ -326,6 +328,8 @@ def test_min_distance():
 
 ## <a name="3"></a>3 Building the animation
 
+### <a name="3.1"></a>3.1 Basic animation stopping after *k* iterations
+
 First, all relevant packages were loaded, and relevant variables and lists were created. 
 
 *<a name="T2"></a>Table 2: Variables and lists needed for the animation.*
@@ -336,7 +340,7 @@ First, all relevant packages were loaded, and relevant variables and lists were 
 | `k` || The number of iterations |
 | `neighbourhood` || The maximum distance 2 agents can have to `share` their stock |
 | `agents` || A list containing all agents |
-| `environment` || a list containing lists of values, where the position of each list indicates the y-co-ordinate of said value, while the position of a value within each sub-list denotes the value's x-coordinate. Values here refer to how much grass is on a point in the environment. Visually, values respond to different colours. |
+| `environment` || Same as in [table 1](#T1) |
 | `fig` || A (currently empty) graph, in which the agents and environment will be dispalyed |
 
 ```
@@ -364,17 +368,16 @@ while len(agents) < n:
 fig = pyplot.figure(figsize=(8, 8))
 ```
 
+Second, an `update` function needs to be defined. This contains all functions we want to occur in the final animation (`move_agent`, `eat`, `regurgitate`, `grass_grow`, `share`). Thus, `update` can be used as a replacement for using the other functions individually. Moreover, `update` scatters each iteration onto `fig`. In order to only dispaly agents' most recent positions, `fig` is also cleared in each iteration of `update`. 
 
 ```
-# defining the functions
 def update(frame_number):
-    # makes agents eat, share, move and displays the chart
     fig.clear()
     pyplot.imshow(environment)
     pyplot.ylim(0, 100)
     pyplot.xlim(0, 100)
-    random.shuffle(agents) # shuffles the order in which agents are moved, receive resources, etc. --> important for share function
-    agents[0].grass_grow() # has to be outside so that it doesn't grow after each inididual agent moved
+    random.shuffle(agents) # shuffles the order in which agents are manipulated, so that the sharing order shuffles
+    agents[0].grass_grow() # has to be outside so that it doesn't grow after each inidividual agent moved
     for i in range(len(agents)):
         agents[i].eat()
         agents[i].regurgitate()
@@ -382,9 +385,21 @@ def update(frame_number):
         agents[i].moveagent()
     for i in range(len(agents)):
         pyplot.scatter(agents[i].x_position, agents[i].y_position, color='white', s=10)
+```
 
+The animation can now be run, using the number of iterations (*k*) as a stopping point.
+
+```
+animation = animation.FuncAnimation(fig, update, frames = k, repeat=False)
+```
+
+
+### <a name="3.2"></a>3.2 Alternative endings: Stopping the animation using a generator function
+
+Alternatively, a generator function can be defined. In this case, the function will break the `update` loop in the final animation once an agent tries to `eat` from a point in the environment which contains 0 units. Moreover, a timer was built into the function, which records the seconds taken for the animation to break. 
+
+```
 def gen_function(b = [0]):
-    # stops the agents once the grass is eaten up in one spot
     start = time.time()
     a = 0
     list = []
@@ -398,11 +413,8 @@ def gen_function(b = [0]):
             end = time.time()
             print('Timer:', end - start, 'seconds')      
             break
+
+animation = animation.FuncAnimation(fig, update, frames = gen_function(), repeat=False)
 ```
 
-```
-animation = animation.FuncAnimation(fig, update, frames = gen_function(), repeat=False) # uses gen_function for stopping
-'''
-animation = animation.FuncAnimation(fig, update, frames = k, repeat=False) # uses number of iterations (k) for stoping 
-'''
-```
+[Go back to top](#pagetop)
