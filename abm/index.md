@@ -1,12 +1,13 @@
 # <a name="pagetop"></a>Agent-based modelling using Python
 
-
-<img src="animation3.gif" align="right" width="800"/> *Figure 1: Animated illustration of the final model.* _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
 This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
 The final model will create an animation as depicted in *Figure 1*
 
+![Figure 1](animation3.gif)
+*Figure 1: Animated illustration of the final model.* 
 
+_*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
 
 
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). Please note that all indentations within this online representation of the code are intentional. In other words, the functions in sections 1 and 2 are defined *within* a class and are therefore indented. 
