@@ -1,5 +1,5 @@
 """
-tests for abm: agents_framework.py
+tests for abm: mock_framework.py, a non-random mock framework for agent_framework.py
 """
 import pytest
 import mock_framework
@@ -46,7 +46,7 @@ def test_eat():
     assert agents[0].environment[agents[0].y_position][agents[0].x_position] == 0 and agents[0].store == 98
 
 
-def test_throw_up():
+def test_regurgitate():
     environment = []
     list = []
     while len(list) < 100:
@@ -58,13 +58,21 @@ def test_throw_up():
     agents.append(mock_framework.Agents(environment, agents))
     
     agents[0].store = 100
-    agents[0].throw_up()
+    agents[0].regurgitate()
     assert agents[0].store == 100 and agents[0].environment[agents[0].y_position][agents[0].x_position] == 100
  
     agents[0].store = 300
-    agents[0].throw_up()
-    assert agents[0].store == 250 and agents[0].environment[agents[0].y_position][agents[0].x_position] == 150
-
+    agents[0].regurgitate()
+    assert agents[0].store == 250 and agents[0].environment[agents[0].y_position][agents[0].x_position] == 126
+    assert agents[0].environment[agents[0].y_position][agents[0].x_position + 1] == 103
+    assert agents[0].environment[agents[0].y_position][agents[0].x_position - 1] == 103
+    assert agents[0].environment[agents[0].y_position + 1][agents[0].x_position] == 103
+    assert agents[0].environment[agents[0].y_position + 1][agents[0].x_position + 1] == 103
+    assert agents[0].environment[agents[0].y_position + 1][agents[0].x_position - 1] == 103
+    assert agents[0].environment[agents[0].y_position - 1][agents[0].x_position] == 103
+    assert agents[0].environment[agents[0].y_position - 1][agents[0].x_position + 1] == 103
+    assert agents[0].environment[agents[0].y_position - 1][agents[0].x_position - 1] == 103
+    
     
 def test_grass_grow():
     environment = []
@@ -152,9 +160,6 @@ def test_share():
     
     agents[0].share(10)
     
-    assert agents[0].store == 5 #and agents[1].store == 5
+    assert agents[0].store == 5 and agents[1].store == 5
 
-pytest.main()  
-    
-  
-  
+pytest.main()
