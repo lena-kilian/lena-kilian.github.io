@@ -51,9 +51,17 @@ class Agents:
         if self.store >= 100:
             self.store -= 5
         
-    def throw_up(self):
+    def regurgitate(self):
         if self.store > 150:
-            self.environment[self.y_position][self.x_position] += 50
+            self.environment[self.y_position][self.x_position] += 26
+            self.environment[self.y_position - 1][self.x_position - 1] += 3
+            self.environment[self.y_position - 1][self.x_position + 1] += 3
+            self.environment[self.y_position - 1][self.x_position] += 3
+            self.environment[self.y_position + 1][self.x_position - 1] += 3
+            self.environment[self.y_position + 1][self.x_position + 1] += 3
+            self.environment[self.y_position + 1][self.x_position] += 3
+            self.environment[self.y_position][self.x_position - 1] += 3
+            self.environment[self.y_position][self.x_position + 1] += 3
             self.store -= 50
 
     def grass_grow(self):
@@ -68,13 +76,13 @@ class Agents:
                 (self.y_position - other_agent.y_position)**2)**0.5
 
     def min_distance(self):
-        # calculating the minimum distance between all agents
+        # calculating the minimum distance between all agent pairs
         return min(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
     
     def max_distance(self):
-        # calculating the minimum distance between all agents
+        # calculating the minimum distance between all agent pairs
         return max(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
