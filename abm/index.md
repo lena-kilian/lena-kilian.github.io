@@ -5,6 +5,7 @@ This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/comput
 The final model will create an animation as depicted in *Figure 1*
 
 ![Figure 1](animation3.gif)
+
 *Figure 1: Animated illustration of the final model.* 
 
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
