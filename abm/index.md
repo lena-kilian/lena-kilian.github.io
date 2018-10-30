@@ -56,6 +56,7 @@ Each agent has an x-coordinate, y-coordinate, access to the environment, a store
 
 
 *<a name="T1"></a>Table 1: Variable definitions from the `__init__` function.*  
+
 | Variable || Definition |
 | - | - | - |
 | `x_position` || An agent's x-coordinate |
@@ -330,6 +331,7 @@ def test_min_distance():
 First, all relevant packages were loaded, and relevant variables and lists were created. 
 
 *<a name="T2"></a>Table 2: Variables and lists needed for the animation.*  
+
 | Variable / List || Definition |
 | - | - | - |
 | `n` || The number of agents |
