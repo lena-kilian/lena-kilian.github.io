@@ -12,7 +12,6 @@
 
 2013 - 2017   BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 
-|
 
 **RESEARCH EXPERIENCE**
 
@@ -20,20 +19,17 @@
 
 2015 - 2016   Research Intern, Social Psychology Lab, University of Hong Kong
 
-|
 
 **CONFERENCE ACTIVITY**
 
 2017          *Temporal Discounting in E-Commerce*, British Psychological Society Undergraduate Conference Scotland
 
-|
 
 **COMMUNITY ENGAGEMENT**
 
 2017 - 2018   Organised PGT Urban Futures Reading Group, King’s College London, Department of Geography
 2015 - 2016   Equal Opportunities Student Ambassador and Committee Secretary, University of Hong Kong, Equal Opportunities Unit
 
-|
 
 **LANGUAGES**
 English (fluent), German (native), Mandarin (basic)|
