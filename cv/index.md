@@ -16,7 +16,7 @@
 
 **RESEARCH EXPERIENCE**
 
-2016          *We, too, are HKU* – Research project promoting social inclusion on campus, University of Hong Kong, Equal Opportunities Unit
+2016          *We, too, are HKU*  |  Research project promoting social inclusion on campus, University of Hong Kong, Equal Opportunities Unit
 
 2015 - 2016   Research Intern, Social Psychology Lab, University of Hong Kong
 
