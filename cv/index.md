@@ -1,27 +1,18 @@
 # CV
 
-hello  world
+### EDUCATION
 
-hello  
-world
-
-hello
-world
-
-hello
-
-world
-
-**EDUCATION**
-
-2018 - 2022  ESCR-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
+**2018 - 2022**
+ESCR-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
 •	 Add more info about 2+2
 - or like this
 
-2017 - 2018   MSc Sustainable Cities, King’s College London, Department of Geography
+**2017 - 2018**
+MSc Sustainable Cities, King’s College London, Department of Geography
 
 
-2013 - 2017   BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
+**2013 - 2017** 
+BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 
 |
 
