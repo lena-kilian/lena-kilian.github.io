@@ -4,10 +4,8 @@ This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/comput
 
 The final model will create an animation as depicted in *Figure 1*
 
-![Figure 1](animation3.gif)
-
-*Figure 1: Animated illustration of the final model.* 
-
+![Figure 1](animation3.gif)  
+*Figure 1: Animated illustration of the final model.*   
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
 
 
@@ -57,8 +55,7 @@ class Agents:
 Each agent has an x-coordinate, y-coordinate, access to the environment, a store, and access to other agents' positions. Definitions for these variables are in table 1. 
 
 
-*<a name="T1"></a>Table 1: Variable definitions from the `__init__` function.*
-
+*<a name="T1"></a>Table 1: Variable definitions from the `__init__` function.*  
 | Variable || Definition |
 | - | - | - |
 | `x_position` || An agent's x-coordinate |
@@ -332,8 +329,7 @@ def test_min_distance():
 
 First, all relevant packages were loaded, and relevant variables and lists were created. 
 
-*<a name="T2"></a>Table 2: Variables and lists needed for the animation.*
-
+*<a name="T2"></a>Table 2: Variables and lists needed for the animation.*  
 | Variable / List || Definition |
 | - | - | - |
 | `n` || The number of agents |
