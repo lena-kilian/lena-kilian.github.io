@@ -39,6 +39,7 @@ English (fluent), German (native), Mandarin (basic)|
 
 
 ----- 
+
 | EDUCATION |||
 | - | - | - |
 |2018 - 2022|| ESCR-funded 2+2 MSc + PhD, University of Leeds, School of Geography|
