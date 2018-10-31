@@ -44,7 +44,6 @@ The `class` was defined as Agents. An initiating function was created.
 class Agents:
     
     def __init__(self, environment, all_agents):
-        # Initiating with random starting point
         self.x_position = random.randint(0, 99)
         self.y_position = random.randint(0, 99)
         self.environment = environment
@@ -70,7 +69,6 @@ Moreover, the `print` was overwritten, such that it would print the x- and y-coo
 
 ```
     def __repr__(self):
-        # changing print function
         return (f"[{self.x_position}, {self.y_position}]")
 ```
 
@@ -113,7 +111,7 @@ To prevent agents from leaving the grid, a torus was installed. This was done us
 
 In addition to being able to move around the environment, agents are able to interact with it by eating it or regurgitating some grass they had previously eaten onto it. With each `eat` iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environment, the agent will eat the remaining value and the environment will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailable to `share` (see below) and to slow down the storage accumulation. 
 
-In a similar manner, using `regurgitate` once an agent has stored more than 150 units, their store will decrease by 50 units. The point in the environment they stand on will then increase by 26 units, while the surrounding 8 points will each gain 3 units. These units will become available for other agents to `eat` if they land on said points in the environment. 
+In a similar manner, using `regurgitate` once an agent has stored more than 150 units, their store will decrease by 50 units. The raster in the environment they stand on will then increase by 26 units, while the surrounding 8 rasters will each gain 3 units. These units will become available for other agents to `eat` if they land on said raster in the environment. 
 
 ```
     def eat(self):
@@ -199,7 +197,6 @@ As already mentioned, starting points were de-randomised. For this, `__init__` w
 class Agents:
     
     def __init__(self, environment, all_agents):
-        # Initiating with non-random starting point
         self.x_position = 50
         self.y_position = 50
         self.environment = environment
@@ -275,7 +272,7 @@ def test_moveagent():
     assert agents[1].x_position == 48 or agents[1].x_position == 52
 ```
 
-In testing, it is important to test for various scenarios. In this case, I therefore tested that both cases (store >= 100 and store < 100) were functioning properly. This was also done for the other functions. For instance, `test_eat` tested for the reduction of units from the environment and the addition of units to the stock for cases of an environmental point having 10+ units and having less than 10 units. Moreover, the aspect of the function in which an agent's stock only increases by 5 units if their (post-eating) store was 100 units or more was tested. 
+In testing, it is important to test for various scenarios. In this case, I therefore tested that both cases (store >= 100 and store < 100) were functioning properly. This was also done for the other functions. For instance, `test_eat` tested for the reduction of units from the environment and the addition of units to the stock for cases of an environmental raster containing 10+ units and having less than 10 units. Moreover, the aspect of the function in which an agent's stock only increases by 5 units if their (post-eating) store was 100 units or more was tested. 
 
 ```
 def test_eat():
@@ -399,7 +396,7 @@ As an add-on the animation stopping with a function was timed. Thus `time` had t
 import time
 ```
 
-Thereafter, a generator function was defined, in which the agents, environment and visualisation are updated until there is a point in the environment which contains 0 units of grass. Once this happens, `gen_function` will break the `update` loop. This function was then added to the animation as a measure of length (`frames`) of the animation. As the value assigned to `frames` must be numerical, the generator function was built in a way in which it adds one to variable `a` (here the number of frames), each time the smallest value within the environment is still greater than 0. 
+Thereafter, a generator function was defined, in which the agents, environment and visualisation are updated until there is a raster in the environment which contains 0 units of grass. Once this happens, `gen_function` will break the `update` loop. This function was then added to the animation as a measure of length (`frames`) of the animation. As the value assigned to `frames` must be numerical, the generator function was built in a way in which it adds one to variable `a` (here the number of frames), each time the smallest value within the environment is still greater than 0. 
 
 ```
 def gen_function(b = [0]):
