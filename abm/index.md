@@ -4,8 +4,8 @@ This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/comput
 
 The final model will create an animation as depicted in *Figure 1*
 
-<p><img style="padding: 5px 5px; float: center;" src="animation3.gif" width="600"/></p><br/>
-*Figure 1: Animated illustration of the final model.*<br/>
+<p><img style="float: center;" src="animation3.gif" width="600"/></p><br/>
+*Figure 1: Animated illustration of the final model.*
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._
 
 
