@@ -4,9 +4,9 @@ This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/comput
 
 The final model will create an animation as depicted in *Figure 1*
 
-![Figure 1](animation3.gif)  
-*Figure 1: Animated illustration of the final model.*   
-_*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._ 
+<img src="animation3.gif" align="center" width="600"/><br/>
+*Figure 1: Animated illustration of the final model.*<br/>
+_*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._
 
 
 Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). Please note that all indentations within this online representation of the code are intentional. In other words, the functions in sections 1 and 2 are defined *within* a class and are therefore indented. 
