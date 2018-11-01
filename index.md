@@ -10,7 +10,3 @@ My current research looks at spatial energy footprints in the UK.<br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
