@@ -1,10 +1,10 @@
 # <a name="pagetop"></a>Agent-based modelling using Python
 
-This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* number of agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
+This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
 The final model will create an animation as depicted in *Figure 1*
 
-<img src="animation3.gif" align="center" width="600"/><br/>
+<p><img style="padding: 5px 5px; float: center;" src="animation3.gif" width="600"/><br/>
 *Figure 1: Animated illustration of the final model.*<br/>
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._
 
