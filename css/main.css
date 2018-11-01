@@ -163,7 +163,8 @@ th {
 img {
     float: center;
     padding: 0px;
-    text-align: center
+    text-align: center;
+    align: center;
 }
 
 footer {
