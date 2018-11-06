@@ -1,10 +1,10 @@
 # <a name="pagetop"></a>Agent-based modelling using Python
 
-This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* agents, which are located randomly on a 100 x 100 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
+This model is part of an [assessment](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment1/index.html) for [GEOG5995](http://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/index.html). It creates *n* agents, which are located randomly on a 300 x 300 grid. In this example the agents represent sheep, which will move around and interact with an imported environment, as well as each other. 
 
 The final model will create an animation as depicted in *Figure 1*
 
-![Figure 1](animation3.gif)<br/>
+![Figure 1](animation7_300s.gif)<br/>
 *Figure 1: Animated illustration of the final model.*<br/>
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._
 
@@ -44,8 +44,8 @@ The `class` was defined as Agents. An initiating function was created.
 class Agents:
     
     def __init__(self, environment, all_agents):
-        self.x_position = random.randint(0, 99)
-        self.y_position = random.randint(0, 99)
+        self.x_position = random.randint(0, 299)
+        self.y_position = random.randint(0, 299)
         self.environment = environment
         self.store = 0
         self.all_agents = all_agents
@@ -79,30 +79,30 @@ Thereafter, `moveagent` was defined to randomly move the agent around the enviro
 To prevent agents from leaving the grid, a torus was installed. This was done using a remainder function. In this way, agents exiting the grid on one side, will re-enter it on the opposite side.
 
 ```
-   def moveagent(self):
-        if self.store <= 100: 
+    def moveagent(self):
+        if self.store <= 100:
             a = random.random()
             b = random.random()
             if a <= 0.33:
-                self.x_position = (self.x_position + 1) % 101
-            elif 0.33 < a and a <= 0.67:
-                self.x_position = (self.x_position - 1) % 101
+                self.x_position = (self.x_position + 1) % 299
+            elif a >= 0.67:
+                self.x_position = (self.x_position - 1) % 299
             if b <= 0.33:
-                self.y_position = (self.y_position + 1) % 101
-            elif 0.33 < b and b <= 0.67:
-                self.y_position = (self.y_position - 1) % 101
+                self.y_position = (self.y_position + 1) % 299
+            elif b >= 0.67:
+                self.y_position = (self.y_position - 1) % 299
         else:
             for i in range(2):
                 a = random.random()
                 b = random.random()
-                if a < 0.33:
-                    self.x_position = (self.x_position + 1) % 101
-                elif a < 0.67:
-                    self.x_position = (self.x_position - 1) % 101
-                if b < 0.33:
-                    self.y_position = (self.y_position + 1) % 101
-                elif b < 0.67:
-                    self.y_position = (self.y_position - 1) % 101
+                if a <= 0.33:
+                    self.x_position = (self.x_position + 1) % 299
+                elif a >= 0.67:
+                    self.x_position = (self.x_position - 1) % 299
+                if b <= 0.33:
+                    self.y_position = (self.y_position + 1) % 299
+                elif b >= 0.67:
+                    self.y_position = (self.y_position - 1) % 299
 ```
 
 
@@ -212,23 +212,23 @@ Moreover, the `moveagent` function was changed, to force the agent to move in ea
         b = random.random()
         if self.store <= 100:
             if a <= 0.33:
-                self.x_position = (self.x_position + 1) % 101
+                self.x_position = (self.x_position + 1) % 299
             else:
-                self.x_position = (self.x_position - 1) % 101
+                self.x_position = (self.x_position - 1) % 299
             if b <= 0.33:
-                self.y_position = (self.y_position + 1) % 101
+                self.y_position = (self.y_position + 1) % 299
             else:
-                self.y_position = (self.y_position - 1) % 101
+                self.y_position = (self.y_position - 1) % 299
         else:
             for i in range(2):
-                if a < 0.33:
-                    self.x_position = (self.x_position + 1) % 101
+                if a <= 0.33:
+                    self.x_position = (self.x_position + 1) % 299
                 else:
-                    self.x_position = (self.x_position - 1) % 101
-                if b < 0.33:
-                    self.y_position = (self.y_position + 1) % 101
+                    self.x_position = (self.x_position - 1) % 299
+                if b <= 0.33:
+                    self.y_position = (self.y_position + 1) % 299
                 else:
-                    self.y_position = (self.y_position - 1) % 101
+                    self.y_position = (self.y_position - 1) % 299
 ```
 
 Lastly, randomisation was removed from `grass_grow`, to test if this function is actually able to manipulate the environment as wanted. 
@@ -266,13 +266,22 @@ def test_moveagent():
     assert agents[0].y_position == 49 or agents[0].y_position == 51
     assert agents[0].x_position == 49 or agents[0].x_position == 51
     
+    agents[0].y_position = 301
+    agents[0].x_position = -3
+    print(agents[0])
+    agents[0].moveagent()
+    print(agents[0])
+    
+    assert agents[0].y_position == 1 or agents[0].y_position == 3
+    assert agents[0].x_position == 295 or agents[0].x_position == 297
+    
     agents[1].store = 200
     agents[1].moveagent()
     assert agents[1].y_position == 48 or agents[1].y_position == 52
     assert agents[1].x_position == 48 or agents[1].x_position == 52
 ```
 
-In testing, it is important to test for various scenarios. In this case, I therefore tested that both cases (store >= 100 and store < 100) were functioning properly. This was also done for the other functions. For instance, `test_eat` tested for the reduction of units from the environment and the addition of units to the stock for cases of an environmental raster containing 10+ units and having less than 10 units. Moreover, the aspect of the function in which an agent's stock only increases by 5 units if their (post-eating) store was 100 units or more was tested. 
+In testing, it is important to test for various scenarios. In this case, I therefore tested that the torus as well as both cases (store >= 100 and store < 100) were functioning properly. This was also done for the other functions. For instance, `test_eat` tested for the reduction of units from the environment and the addition of units to the stock for cases of an environmental raster containing 10+ units and having less than 10 units. Moreover, the aspect of the function in which an agent's stock only increases by 5 units if their (post-eating) store was 100 units or more was tested. 
 
 ```
 def test_eat():
@@ -368,17 +377,20 @@ Second, an `update` function needs to be defined. This contains all functions we
 def update(frame_number):
     fig.clear()
     pyplot.imshow(environment)
-    pyplot.ylim(0, 100)
-    pyplot.xlim(0, 100)
-    random.shuffle(agents) # shuffles the order in which agents are manipulated, so that the sharing order shuffles
-    agents[0].grass_grow() # has to be outside so that it doesn't grow after each inidividual agent moved
+    pyplot.ylim(0, 300)
+    pyplot.xlim(0, 300)
+    
+    random.shuffle(agents)
+    agents[0].grass_grow()
+    
     for i in range(len(agents)):
         agents[i].eat()
         agents[i].regurgitate()
         agents[i].share(neighbourhood)
         agents[i].moveagent()
+        
     for i in range(len(agents)):
-        pyplot.scatter(agents[i].x_position, agents[i].y_position, color='white', s=10)
+        pyplot.scatter(agents[i].x_position, agents[i].y_position, color='white', s=5)
 ```
 
 The animation can now be run, using the number of iterations (*k*) as a stopping point.
