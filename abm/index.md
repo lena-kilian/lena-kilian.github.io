@@ -174,13 +174,11 @@ Moreover, the distance function can be used to calculate minimum and maximum dis
 
 ```
     def min_distance(self):
-        # calculating the minimum distance between all agents
         return min(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
     
     def max_distance(self):
-        # calculating the minimum distance between all agents
         return max(self.all_agents[i].distance(self.all_agents[j])
                    for i in range(len(self.all_agents))
                    for j in range(i + 1, len(self.all_agents)))
