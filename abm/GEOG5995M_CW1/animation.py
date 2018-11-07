@@ -61,12 +61,7 @@ def gen_function(b = [0]):
             yield a
         else:
             end = time.time()
-            print('Timer:', end - start, 'seconds')
-            '''
-            for i in range(len(agents)):
-                if agents[i].environment[agents[i].y_position][agents[i].x_position] <= 0:
-                    print("This is where the grass is gone:", "Y=" + agents[i].y_postion, "X=" + agents[i].x_postion)
-            '''          
+            print('Timer:', end - start, 'seconds')         
             break
 
 animation = animation.FuncAnimation(fig, update, frames = gen_function(), repeat=False) # uses gen_function for stopping
