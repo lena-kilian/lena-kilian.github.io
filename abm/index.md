@@ -287,9 +287,9 @@ In testing, it is important to test for various scenarios. In this case, I there
 def test_eat():
     environment = []
     list = []
-    while len(list) < 100:
+    while len(list) < 300:
         list.append(100)
-    while len(environment) < 100:
+    while len(environment) < 300:
         environment.append(list.copy())
     
     agents = []
