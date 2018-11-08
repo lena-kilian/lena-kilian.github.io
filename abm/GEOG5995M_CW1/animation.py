@@ -31,7 +31,7 @@ def update(frame_number):
     pyplot.ylim(0, 300)
     pyplot.xlim(0, 300)
     
-    random.shuffle(agents) # shuffles the order in which agents are moved, receive resources, etc. --> important for share function
+    random.shuffle(agents) # shuffles the agents' order; important for share function to ensure that averages are not always calculated in the same order of agent pairs
     agents[0].grass_grow() # has to be outside so that it doesn't grow after each inididual agent moved
     
     for i in range(len(agents)):
