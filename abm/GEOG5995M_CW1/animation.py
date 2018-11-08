@@ -47,16 +47,17 @@ def update(frame_number):
 def gen_function(b = [0]):
     start = time.time()
     a = 0
-    list = []
+    env_list = []
     while True:
         '''
+        # adding this bit will save a picture at each iteration
         fname = '_tmp%5d.png' % a
         print('Saving frame', fname)
         pyplot.savefig(fname)
         '''
         for i in range(len(environment)):
-            list.append(min(environment[i]))
-        if min(list) > 0:
+            env_list.append(min(environment[i]))
+        if min(env_list) > 0:
             a += 1
             yield a
         else:
