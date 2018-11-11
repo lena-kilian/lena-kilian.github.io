@@ -6,7 +6,7 @@ More detail about the project can be found [here](https://lena-kilian.github.io/
 
 ### Files
 
-|File name|Expanation|
+|File name|Explanation|
 |-|-|
 |agent_framework.py|Contains the agent class|
 |animation.py|Contains the final model, which when run produces an animated chart of the agents' movements and environment|
