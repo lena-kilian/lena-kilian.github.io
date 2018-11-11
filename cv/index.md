@@ -4,8 +4,7 @@
 
 **2018 - 2022**<br/>
 ESCR-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
-•	 Add more info about 2+2
-- or like this
+
 
 **2017 - 2018**<br/>
 MSc Sustainable Cities, King’s College London, Department of Geography
