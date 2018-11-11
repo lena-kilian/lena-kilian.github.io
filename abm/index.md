@@ -31,7 +31,7 @@ Python and text files with the full code can be downloaded [here](https://github
 ## <a name="1"></a>1 The Agent Framework
 ### <a name="1.1"></a>1.1 Creating the class
 
-First, the `random` and `copy` packages must be imported. 
+First, the `random` and `copy` modules must be imported. 
 
 ```
 import random
@@ -186,7 +186,7 @@ Moreover, the distance function can be used to calculate minimum and maximum dis
 ## <a name="2"></a>2 Testing 
 ### <a name="2.1"></a>2.1 Creating a mock framework
 
-In order to test functions, an expected output needs to be provided. For instance, as agents' starting points were randomised in the original model, a mock framework was created in which this randomisation was removed. Although all functions from [section 1](#1) were tested, this section will only go through the functions which had to be altered for testing. The full mock framework can be found [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). The packages used in the mock framework were identical with those used in the actual framework.
+In order to test functions, an expected output needs to be provided. For instance, as agents' starting points were randomised in the original model, a mock framework was created in which this randomisation was removed. Although all functions from [section 1](#1) were tested, this section will only go through the functions which had to be altered for testing. The full mock framework can be found [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). The modules used in the mock framework were identical with those used in the actual framework.
 
 As already mentioned, starting points were de-randomised. For this, `__init__` was altered to provide non-random x- and y-coordinates. 
 
@@ -331,7 +331,7 @@ def test_min_distance():
 
 ### <a name="3.1"></a>3.1 Basic animation stopping after *k* iterations
 
-First, all relevant packages were loaded, and relevant variables and lists were created. 
+First, all relevant modules were loaded, and relevant variables and lists were created. 
 
 *<a name="T2"></a>Table 2: Variables and lists needed for the animation.*  
 
@@ -399,7 +399,7 @@ animation = animation.FuncAnimation(fig, update, frames = k, repeat=False)
 
 ### <a name="3.2"></a>3.2 Alternative endings: Stopping the animation using a generator function
 
-As an add-on the animation stopping with a function was timed. Thus `time` had to be imported in addition to the packages from [section 3.1](#3.1).
+As an add-on the animation stopping with a function was timed. Thus `time` had to be imported in addition to the modules from [section 3.1](#3.1).
 
 ```
 import time
