@@ -138,7 +138,7 @@ In a similar manner, using `regurgitate` once an agent has stored more than 150 
             self.store -= 50
 ```
 
-Similarly, `grass_grow` is an environmental manipulations. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurrence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. Moreover, is a value within the environment was over 255 units, `grass_grow` would not impact the environment. This value was chosen as it is the highest value in the environment at the start.
+Similarly, `grass_grow` is an environmental manipulation. However, it differs from `eat` and `regurgitate` in that the environment is accessed through an agent, but the agent is not actually manipulated. To avoid the grass growing excessively, and because its values have to be integers, the occurrence of this function was randomised. In other words, with each iteration of this function, the probability that the values within the lists within the environment will increase by 1 unit is 0.01. Moreover, is a value within the environment was over 255 units, `grass_grow` would not impact the environment. This value was chosen as it is the highest value in the environment at the start.
 
 ```
     def grass_grow(self):
