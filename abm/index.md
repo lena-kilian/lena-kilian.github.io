@@ -122,7 +122,6 @@ In a similar manner, using `regurgitate` once an agent has stored more than 150 
             self.store += self.environment[self.y_position][self.x_position]
             self.environment[self.y_position][self.x_position] = 0
         if self.store >= 100:
-            ''' makes them eat it properly, rather than just store --> makes grass disappaear''' 
             self.store -= 5
 
     def regurgitate(self):
