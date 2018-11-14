@@ -9,7 +9,7 @@ The final model will create an animation as depicted in *Figure 1*
 _*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._
 
 
-Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/lena-kilian.github.io/tree/master/abm/GEOG5995M_CW1). Please note that all indentations within this online representation of the code are intentional. In other words, the functions in sections 1 and 2 are defined *within* a class and are therefore indented. 
+Python and text files with the full code can be downloaded [here](https://github.com/lena-kilian/GEOG5995M_CW1). Please note that all indentations within this online representation of the code are intentional. In other words, the functions in sections 1 and 2 are defined *within* a class and are therefore indented. 
 
 ### Sections:
 
