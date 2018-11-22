@@ -10,3 +10,5 @@ My current research looks at spatial energy footprints in the UK. More specifica
 Broadly speaking, I am interested in the social impacts on and the environmental impacts of energy consumption, as well as the  social and environmental effects of sustainable energy behaviour change policy. 
 <br/>
 <br/>
+<br/>
+<br/>
