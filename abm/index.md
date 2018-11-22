@@ -74,9 +74,9 @@ Moreover, the `print` was overwritten, such that it would print the x- and y-coo
 
 ### <a name="1.2"></a>1.2 Moving around the environment
 
-Thereafter, `moveagent` was defined to randomly move the agent around the environment. An agent's move along the x- and y-directions were separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
+Thereafter, `moveagent` was defined to randomly move the agent around the environment. Movement along the x- and y-directions was separated, and there was an equal chance that the agents position is a given direction would increase, decrease or remain the same. If an agent had a store higher than or equal to 100, they were coded to move twice in a given round. The direction of the first move would not impact the direction of the second move. 
 
-To prevent agents from leaving the grid, a torus was installed. This was done using a remainder function. In this way, agents exiting the grid on one side, will re-enter it on the opposite side.
+To prevent agents from leaving the grid, a torus was installed using a remainder function. In this way, agents exiting the grid on one side, will re-enter it on the opposite side.
 
 ```
     def moveagent(self):
@@ -109,9 +109,9 @@ To prevent agents from leaving the grid, a torus was installed. This was done us
 
 ### <a name="1.3"></a>1.3 Interacting with the environment
 
-In addition to being able to move around the environment, agents are able to interact with it by eating it or regurgitating some grass they had previously eaten onto it. With each `eat` iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environment, the agent will eat the remaining value and the environment will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailable to `share` (see below) and to slow down the storage accumulation. 
+In addition to being able to move around the environment, agents are able to interact with it by eating or regurgitating some grass they had previously eaten. With each `eat` iteration, 10 units are removed from the point the agent stands on in the environment and added to the agent's store. If less than 10 units are available in an agent's environment, the agent will eat the remaining value and the environment will drop to 0 at that point. If an agent's store is equal to or higher than 100, they will remove 10 units from the point in the environment they stand on, but only move 5 units to their store. The remaining five units will be fully eaten, so that they are unavailable to `share` (see below) and to slow down the storage accumulation. 
 
-In a similar manner, using `regurgitate` once an agent has stored more than 150 units, their store will decrease by 50 units. The raster in the environment they stand on will then increase by 26 units, while the surrounding 8 rasters will each gain 3 units. These units will become available for other agents to `eat` if they land on said raster in the environment. 
+Using `regurgitate` once an agent has stored more than 150 units, their store will decrease by 50 units. The raster in the environment they stand on will then increase by 26 units, while the surrounding 8 rasters will each gain 3 units.
 
 ```
     def eat(self):
