@@ -3,7 +3,7 @@
 ### EDUCATION
 
 **2018 - 2022**<br/>
-ESCR-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
+ESRC-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
 
 
 **2017 - 2018**<br/>
