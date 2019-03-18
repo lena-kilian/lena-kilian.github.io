@@ -7,6 +7,5 @@ The final model will create an animation as depicted in *Figure 1*
 
 ![Figure 1](animation7_300s.gif)<br/>
 *Figure 1: Animated illustration of the final model.*<br/>
-_*Notes: This figure contains some snapshots of the model at different times and not the whole sequence._
 
 The full code can be found [here](https://github.com/lena-kilian/GEOG5995M_CW1).
