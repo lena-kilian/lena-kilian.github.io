@@ -7,7 +7,8 @@ ESRC-funded 2+2 MSc + PhD, University of Leeds, School of Geography
 
 
 **2017 - 2018**<br/>
-MSc Sustainable Cities (Distinction), King’s College London, Department of Geography
+MSc Sustainable Cities (Distinction), King’s College London, Department of Geography  
+Award for Best Thesis in Sustainable Cities for the year 2017/18
 
 
 **2013 - 2017**<br/>
