@@ -16,19 +16,6 @@ BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 
 |
 
-### RESEARCH EXPERIENCE
-
-**2019**<br/>
-Bespoke Report on Consumption-Based Carbon Footprints in Bristol Created for ARUP and Bristol City Council
-
-**2016**<br/>
-*We, too, are HKU*: Research project promoting social inclusion on campus, University of Hong Kong, Equal Opportunities Unit
-
-**2015 - 2016**<br/>
-Research Intern, Social Psychology Lab, University of Hong Kong
-
-|
-
 ### CONFERENCE ACTIVITY
 
 **2019**<br/>
@@ -39,6 +26,19 @@ Research Intern, Social Psychology Lab, University of Hong Kong
 
 **2017**<br/>
 *Temporal Discounting in E-Commerce*, British Psychological Society Undergraduate Conference Scotland
+
+|
+
+### OTHER WORKS
+
+**2019**<br/>
+Bespoke Report on Consumption-Based Carbon Footprints in Bristol Created for ARUP and Bristol City Council
+
+**2016**<br/>
+*We, too, are HKU*: Research project promoting social inclusion on campus, University of Hong Kong, Equal Opportunities Unit
+
+**2015 - 2016**<br/>
+Research Intern, Social Psychology Lab, University of Hong Kong
 
 |
 
