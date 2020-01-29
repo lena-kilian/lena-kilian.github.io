@@ -4,12 +4,11 @@
 
 **2018 - 2022**<br/>
 ESRC-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
-
+*Estimating and evaluating consumption-based carbon and energy footprints of UK neighbourhoods*  
 
 **2017 - 2018**<br/>
 MSc Sustainable Cities (Distinction), King’s College London, Department of Geography  
-Award for Best Thesis in Sustainable Cities for the year 2017/18
-
+Award for Best Thesis in Sustainable Cities for the year 2017/18  
 
 **2013 - 2017**<br/>
 BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
@@ -34,11 +33,12 @@ BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 **2019**<br/>
 Bespoke Report on Consumption-Based Carbon Footprints in Bristol Created for ARUP and Bristol City Council
 
-**2016**<br/>
-*We, too, are HKU*: Research project promoting social inclusion on campus, University of Hong Kong, Equal Opportunities Unit
+|
 
-**2015 - 2016**<br/>
-Research Intern, Social Psychology Lab, University of Hong Kong
+### COMMUNITY ENGAGEMENT
+
+**2019 - present**<br/>
+Data CDT communications representative 
 
 |
 
