@@ -23,7 +23,6 @@ BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 **2019**<br/>
 *Using consumer data to understand household carbon footprints in Bristol*, RSAI-BIS 2019, Cambridge
 
-**2019**<br/>
 *Understanding patterns of consumption-based greenhouse gas emissions in Bristol*, GISRUK 2019, Newcastle
 
 **2017**<br/>
