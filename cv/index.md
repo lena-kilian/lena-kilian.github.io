@@ -17,6 +17,9 @@ BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 
 ### CONFERENCE ACTIVITY
 
+**2020**<br/>
+*Evaluating and comparing microdata to assess greenhouse gas emissions of UK neighbourhoods*, GWS Input-Output Workshop 2020, Osnabrück - [Presentation here](https://www.gws-os.com/downloads/ioworkshop/IO-Workshop-2020_Kilian_ppt.pdf)
+
 **2019**<br/>
 *Using consumer data to understand household carbon footprints in Bristol*, RSAI-BIS 2019, Cambridge
 
