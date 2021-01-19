@@ -1,5 +1,5 @@
 # Curriculum Vitae
-(Click [here](file:///C:/my_file.pdf) for PDF version)
+(Click [here](https://github.com/lena-kilian/lena-kilian.github.io/raw/master/cv/LenaKilian_CV_20210119.pdf) for PDF version)
 
 ### EDUCATION
 
