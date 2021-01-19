@@ -1,10 +1,11 @@
 # Curriculum Vitae
+(Click [here](file:///C:/my_file.pdf) for PDF version)
 
 ### EDUCATION
 
 **2018 - 2022**<br/>
 ESRC-funded 2+2 MSc + PhD, University of Leeds, School of Geography  
-*Estimating and evaluating consumption-based carbon and energy footprints of UK neighbourhoods*  
+*Estimating and evaluating consumption-based greenhouse gas footprints of UK neighbourhoods*  
 
 **2017 - 2018**<br/>
 MSc Sustainable Cities (Distinction), King’s College London, Department of Geography  
