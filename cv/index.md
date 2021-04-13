@@ -60,10 +60,17 @@ Module Assistant for *[Research Evaluation & Special Studies 2 (MEDI2217)](http:
 
 |
 
+
 ### COMMUNITY ENGAGEMENT
 
 **2019 - present**<br/>
 Data CDT communications representative 
+
+|
+
+### PROFESSIONAL MEMBERSHIPS
+
+American Association of Geographers
 
 |
 
