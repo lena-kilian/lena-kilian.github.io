@@ -17,8 +17,13 @@ BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 |
 
 ### PUBLICATIONS
+# Reports
 
 Owen, A. and Kilian, L. 2020. Consumption-based Greenhouse Gas Emissions for Bristol 2016 [Online]. Leeds. Available from: [https://www.bristolonecity.com/wp-content/uploads/2020/05/Consumption-based-Greenhouse-Gas-Emissions-for-Bristol.pdf](https://www.bristolonecity.com/wp-content/uploads/2020/05/Consumption-based-Greenhouse-Gas-Emissions-for-Bristol.pdf).
+
+# Data
+
+Kilian, L., Owen, A., Newing, A., and Ivanova, D. (2021). Per Capita Consumption-Based Greenhouse Gas Emissions for UK Lower and Middle Layer Super Output Areas, 2016. [Data Collection]. Colchester, Essex: UK Data Service.[10.5255/UKDA-SN-854888](10.5255/UKDA-SN-854888).
 
 |
 
