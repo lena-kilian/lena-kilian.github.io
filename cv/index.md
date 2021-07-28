@@ -23,7 +23,7 @@ Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions f
 
 **DATA**
 
-**Kilian, L.**, Owen, A., Newing, A., and Ivanova, D. (2021). Per Capita Consumption-Based Greenhouse Gas Emissions for UK Lower and Middle Layer Super Output Areas, 2016. [Data Collection]. Colchester, Essex: UK Data Service.[10.5255/UKDA-SN-854888](10.5255/UKDA-SN-854888).
+**Kilian, L.**, Owen, A., Newing, A., and Ivanova, D. (2021). Per Capita Consumption-Based Greenhouse Gas Emissions for UK Lower and Middle Layer Super Output Areas, 2016. [Data Collection]. Colchester, Essex: UK Data Service.10.5255/UKDA-SN-854888. [Available here](https://reshare.ukdataservice.ac.uk/854888/)
 
 |
 
