@@ -17,6 +17,10 @@ BSc Psychology (Hons, 1st Class), University of Glasgow, School of Psychology
 |
 
 ### PUBLICATIONS
+**PAPERS**
+
+**Kilian, L.**, Owen, A., Newing, A., and Ivanova D. (2022). Microdata selection for estimating household consumption-based emissions. Economic Systems Research, [DOI: 10.1080/09535314.2022.2034139](https://www.tandfonline.com/doi/full/10.1080/09535314.2022.2034139).
+
 **REPORTS**
 
 Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions for Bristol 2016 [Online]. Leeds. Available from: [https://www.bristolonecity.com/wp-content/uploads/2020/05/Consumption-based-Greenhouse-Gas-Emissions-for-Bristol.pdf](https://www.bristolonecity.com/wp-content/uploads/2020/05/Consumption-based-Greenhouse-Gas-Emissions-for-Bristol.pdf).
