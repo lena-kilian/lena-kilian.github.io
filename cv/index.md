@@ -81,6 +81,7 @@ Data CDT communications representative
 ### PROFESSIONAL MEMBERSHIPS
 
 American Association of Geographers
+Royal Geographical Society - Associate Fellowship
 
 |
 
