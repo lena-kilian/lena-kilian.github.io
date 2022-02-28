@@ -35,7 +35,7 @@ Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions f
 ### CONFERENCE ACTIVITY
 **TALKS**
 
-*Exploring spatial patterns of transport emissions and their social drivers in London neighbourhoods*, American Association of Geographers Annual Meeting 2021, New York City  
+*Exploring spatial patterns of transport emissions and their social drivers in London neighbourhoods*, American Association of Geographers Annual Meeting 2022, New York City  
 
 *Predicting the Impacts of COVID-19-related Income Changes on Consumption-Based Emissions of UK Neighbourhoods*, GISRUK 2021, Cardiff
 
