@@ -96,9 +96,3 @@ Data CDT communications representative
 American Association of Geographers  
 
 Royal Geographical Society - Associate Fellowship
-
-|
-
-### LANGUAGES
-English (fluent), German (native), Mandarin (basic)
-<br/>
