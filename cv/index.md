@@ -44,8 +44,6 @@ Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions f
 *Using consumer data to understand household carbon footprints in Bristol*, RSAI-BIS 2019, Cambridge
 
 *Understanding patterns of consumption-based greenhouse gas emissions in Bristol*, GISRUK 2019, Newcastle
-
-*Temporal Discounting in E-Commerce*, British Psychological Society Undergraduate Conference Scotland
   
 **POSTERS**
 
