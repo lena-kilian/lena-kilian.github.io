@@ -33,17 +33,29 @@ Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions f
 |
 
 ### CONFERENCE ACTIVITY
+**TALKS**
 
-**2020**<br/>
+*Exploring spatial patterns of transport emissions and their social drivers in London neighbourhoods*, American Association of Geographers Annual Meeting 2021, New York City  
+
+*Predicting the Impacts of COVID-19-related Income Changes on Consumption-Based Emissions of UK Neighbourhoods*, GISRUK 2021, Cardiff
+
 *Evaluating and comparing microdata to assess greenhouse gas emissions of UK neighbourhoods*, GWS Input-Output Workshop 2020, Osnabrück - [Presentation here](https://www.gws-os.com/downloads/ioworkshop/IO-Workshop-2020_Kilian_ppt.pdf)
 
-**2019**<br/>
 *Using consumer data to understand household carbon footprints in Bristol*, RSAI-BIS 2019, Cambridge
 
 *Understanding patterns of consumption-based greenhouse gas emissions in Bristol*, GISRUK 2019, Newcastle
 
-**2017**<br/>
 *Temporal Discounting in E-Commerce*, British Psychological Society Undergraduate Conference Scotland
+  
+**POSTERS**
+
+*How does choice of data change greenhouse gas emission estimates? A comparison of consumption data for UK neighbourhoods*, School of Geography PGR Conference 2021, Leeds
+
+*How do microdata affect greenhouse gas emission estimates?*, American Association of Geographers Annual Meeting 2021, Seattle
+  
+**SESSION CHAIRING**
+
+School of Geography PGR Conference 2021, Leeds, Session: Social Sciences
 
 |
 
