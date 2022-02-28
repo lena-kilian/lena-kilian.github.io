@@ -85,7 +85,15 @@ Module Assistant for *[Research Evaluation & Special Studies 2 (MEDI2217)](http:
 
 
 ### COMMUNITY ENGAGEMENT
-
+**2021**<br/>
+Data CDT Partner Event Organiser
+  
+**2021**<br/>
+School of Geography PGR Conference Organiser
+  
+**2020 - 2021**<br/>
+Data Science Club Organiser, Leeds Institute for Data Analytics
+  
 **2019 - present**<br/>
 Data CDT communications representative 
 
