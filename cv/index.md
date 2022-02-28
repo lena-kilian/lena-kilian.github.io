@@ -53,7 +53,7 @@ Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions f
   
 **SESSION CHAIRING**
 
-School of Geography PGR Conference 2021, Leeds, Session: Social Sciences
+Session: *Social Sciences*, School of Geography PGR Conference 2021, Leeds
 
 |
 
