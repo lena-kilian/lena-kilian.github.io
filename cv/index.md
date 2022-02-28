@@ -68,6 +68,9 @@ Bespoke Report on Consumption-Based Carbon Footprints in Bristol Created for ARU
 
 ### TEACHING
 
+**2021/22**<br/>
+Module Demonstrator for *[Applied GIS and Retail Modelling (GEOG5937M)](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202021&M=GEOG-5937M)*, School of Geography, University of Leeds
+
 **2020/21**<br/>
 Module Demonstrator for *[Digital Geographies (GEOG1400)](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201920&M=GEOG-1400)*, School of Geography, University of Leeds
 
@@ -93,6 +96,7 @@ Data CDT communications representative
 ### PROFESSIONAL MEMBERSHIPS
 
 American Association of Geographers  
+
 Royal Geographical Society - Associate Fellowship
 
 |
