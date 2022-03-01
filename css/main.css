@@ -5,7 +5,7 @@ body {
 
 title {
     font-size: 1.9em;
-    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    font-family: 'Bitstream Vera Sans Mono';
     color: #ffbf00;
     padding: 14px 16px;
 }
@@ -99,11 +99,10 @@ footer ul li {
 }
 
 a {
-    color: #a6a6a6;
+    color: #666666;
 }
 
 a:hover {
-    text-decoration:none;
     color: #9CAF88;
 }
 
@@ -117,7 +116,7 @@ title_main {
 title_subtext {
     font-size: 1.1em;
     line-height: 1.1em;
-    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    font-family: 'Bitstream Vera Sans Mono';
     color: #333;
     padding: 0px 0px 0px 0px;
 }
@@ -158,7 +157,6 @@ li {
     line-height: 1.3em;
     font-family:'Helvetica Neue';
     color: #333;
-    padding: 2.5px 16px;
 }
 
 code {
