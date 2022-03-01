@@ -153,6 +153,14 @@ p {
     padding: 2.5px 16px;
 }
 
+li {
+    font-size: 1em;
+    line-height: 1.3em;
+    font-family:'Helvetica Neue';
+    color: #333;
+    padding: 2.5px 16px;
+}
+
 code {
     background-color: #f4f4f4;
 }
