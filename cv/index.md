@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-[embed]https://github.com/lena-kilian/lena-kilian.github.io/raw/master/cv/LenaKilian_CV_20220228.pdf[/embed]
+<embed src="https://github.com/lena-kilian/lena-kilian.github.io/raw/master/cv/LenaKilian_CV_20220228.pdf" type="application/pdf">
 
 Click [here](https://github.com/lena-kilian/lena-kilian.github.io/raw/master/cv/LenaKilian_CV_20220228.pdf) for PDF version  
 [ORCID 0000-0002-0885-1198](https://orcid.org/0000-0002-0885-1198)
