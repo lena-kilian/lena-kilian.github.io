@@ -109,7 +109,7 @@ a:hover {
 
 title_main {
     font-size: 1.9em;
-    font-family:'Helvetica Neue';
+    font-family:'Courier';
     color: #9CAF88;
     padding: 0px 16px 0px 0px;
 }
@@ -117,7 +117,7 @@ title_main {
 title_subtext {
     font-size: 1.1em;
     line-height: 1.1em;
-    font-family: 'Helvetica Neue';
+    font-family: 'Courier';
     color: #333;
     padding: 0px 0px 0px 0px;
 }
