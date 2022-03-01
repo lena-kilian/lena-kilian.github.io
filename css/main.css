@@ -3,6 +3,12 @@ body {
      width: 67%;
  }
 
+title {
+    font-size: 1.9em;
+    font-family:'Helvetica';
+    color: #ffbf00;
+    padding: 14px 16px;
+}
 
  /* Navbar container */
 .navbar {
