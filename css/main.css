@@ -118,7 +118,15 @@ h2 {
     font-size: 1.9em;
     font-family:'Helvetica';
     color: #ffbf00;
-    padding: 16px 0px 0px 0px;
+    padding: 0px 16px 0px 0px;
+}
+
+title_subtext {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-family:'Helvetica';
+    color: #333;
+    padding: 0px 0px 0px 0px;
 }
 
 h3 {
