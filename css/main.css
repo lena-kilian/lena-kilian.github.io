@@ -8,7 +8,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family:'Sans Serif';
+  font-family:'Roboto';
   color: #ffffff;
 }
 
@@ -18,7 +18,7 @@ body {
   font-size: 1.1em;
   color: #ffffff;
   text-align: center;
-  padding: 6px 6px;
+  padding: 9px 9px;
   text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 6px 6px;
+  padding: 9px 9px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
