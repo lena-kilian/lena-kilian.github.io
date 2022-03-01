@@ -5,7 +5,7 @@ body {
 
 title {
     font-size: 1.9em;
-    font-family: 'Bitstream Vera Sans Mono';
+    font-family: 'Helvetica';
     color: #ffbf00;
     padding: 14px 16px;
 }
@@ -108,7 +108,7 @@ a:hover {
 
 title_main {
     font-size: 1.9em;
-    font-family:'Helvetica Neue';
+    font-family:'Bitstream Vera Sans Mono';
     color: #9CAF88;
     padding: 0px 16px 0px 0px;
 }
