@@ -7,9 +7,9 @@
 
 ### <a name="papers"></a> Papers
 
-**Kilian, L.**, Owen, A., Newing, A. and Ivanova D. in prep. ‘Spatial patterns of transport emissions and their social drivers in London neighbourhoods’.  
+**Kilian, L.**, Owen, A., Newing, A. and Ivanova D. (in prep). ‘Spatial patterns of transport emissions and their social drivers in London neighbourhoods’.  
 
-**Kilian, L.**, Owen, A., Newing, A., and Ivanova D. (2022). Microdata selection for estimating household consumption-based emissions. Economic Systems Research, [DOI: 10.1080/09535314.2022.2034139](https://www.tandfonline.com/doi/full/10.1080/09535314.2022.2034139).
+**Kilian, L.**, Owen, A., Newing, A., and Ivanova D. (2022). Microdata selection for estimating household consumption-based emissions. _Economic Systems Research_, [DOI: 10.1080/09535314.2022.2034139](https://www.tandfonline.com/doi/full/10.1080/09535314.2022.2034139).
 
 ### <a name="reports"></a> Reports
 
