@@ -9,7 +9,7 @@ ORCID: [0000-0002-0885-1198](https://orcid.org/0000-0002-0885-1198)
 
 ### <a name="papers"></a> Papers
 
-**Kilian, L.**, Owen, A., Newing, A. and Ivanova D. (in prep). ‘Spatial patterns of transport emissions and their social drivers in London neighbourhoods’.  
+**Kilian, L.**, Owen, A., Newing, A. and Ivanova D. (in prep). ‘Effective mitigation of transport emissions in London neighbourhoods: spatial patterns, social factors, and wellbeing’.  
 
 **Kilian, L.**, Owen, A., Newing, A., and Ivanova D. (2022). Microdata selection for estimating household consumption-based emissions. _Economic Systems Research_, [DOI: 10.1080/09535314.2022.2034139](https://www.tandfonline.com/doi/full/10.1080/09535314.2022.2034139).
 
