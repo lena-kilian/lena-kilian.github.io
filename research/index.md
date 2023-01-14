@@ -13,6 +13,8 @@ ORCID: [0000-0002-0885-1198](https://orcid.org/0000-0002-0885-1198)
 
 **Kilian, L.**, Owen, A., Newing, A., and Ivanova D. (2022). Microdata selection for estimating household consumption-based emissions. _Economic Systems Research_, [DOI: 10.1080/09535314.2022.2034139](https://www.tandfonline.com/doi/full/10.1080/09535314.2022.2034139).
 
+Trendl, A., Owen, A., Vomfell, L., **Kilian, L.**, Gathergood, J., Stewart, N., and Leake, D. (2022). Estimating carbon footprints from large scale financial transaction data. _Journal of Industrial Ecology_, [DOI: 10.1111/jiec.13351](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13351).
+
 ### <a name="reports"></a> Reports
 
 Owen, A. and **Kilian, L.** (2020). Consumption-based Greenhouse Gas Emissions for Bristol 2016 [Online]. Leeds. Available from: [https://www.bristolonecity.com/wp-content/uploads/2020/05/Consumption-based-Greenhouse-Gas-Emissions-for-Bristol.pdf](https://www.bristolonecity.com/wp-content/uploads/2020/05/Consumption-based-Greenhouse-Gas-Emissions-for-Bristol.pdf).
