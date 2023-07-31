@@ -1,10 +1,8 @@
 # About
 
-<img style="padding: 5px;" src="Photo_BW.png" align="right" width="210"/>
+I am a Research Fellow in Consumption-Based Accounting in the Sustainability Research Institute. My work looks at estimating and analysing consumption-based emissions. My work focuses on analysing household emissions, particularly how these can be reduced without furtherin sociel inequalities. Moreover, I work directly on the UK’s model to estimate consumption-based emissions. My work is funded through the [UK Centre for Research into Energy Demand Solutions (CREDS)](https://www.creds.ac.uk/), as well as the [Economic Statistics Centre of Excellence (ESCoE)](https://www.escoe.ac.uk/).
 
-I am postgraduate research student in the School of Geography at the University of Leeds, based at the [Leeds Insititue of Data Analytics](https://lida.leeds.ac.uk/). I am part of the ESRC-funded [Data Analytics and Society CDT](https://datacdt.org/) and am currrently in my third year of a 2+2 MSc and PhD programme. I have previously completed a BSc in Psychology with Sociology at the University of Glasgow and an MSc in Human Geography at King's College London. More information about my background can be found [here](https://lena-kilian.github.io/cv/).
-
-My research looks at UK household's greenhouse gas emissions. More specifically, we aim to estimate conssumption-based footprints longitudinally at a neighbourhood level and then investigate temporal and spatial patterns. This allows for an analysis of the links between geodemographic data and emisions, as well as the impact of policy changes and local infrastructure on emissions. I am supervised by [Dr. Anne Owen](https://environment.leeds.ac.uk/see/staff/1462/dr-anne-owen), [Dr. Andy Newing](https://environment.leeds.ac.uk/geography/staff/1081/dr-andy-newing) and [Dr. Diana Ivanova](https://environment.leeds.ac.uk/see/staff/2625/dr-diana-ivanova). More information about the project will be updated regularly on my [university profile](https://environment.leeds.ac.uk/geography/pgr/2546/lena-kilian). 
+In 2023, I completed an ESRC-funded 2+2 MSc + PhD programme at the University of Leeds as part of the ESRC-funded [Data Analytics and Society CDT](https://datacdt.org/). The focus of my PhD research was on consumption-based emissions of UK households. In addition to this I have an MSc from King’s College London in Sustainable Cities and a BSc from the University of Glasgow in Psychology with Sociology. More information about my background can be found [here](https://lena-kilian.github.io/cv/).
 <br/>
 <br/>
 <br/>
