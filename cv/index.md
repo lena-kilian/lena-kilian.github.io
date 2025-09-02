@@ -1,5 +1,3 @@
 # CV
 
-Click [here](https://github.com/lena-kilian/lena-kilian.github.io/blob/master/cv/LenaKilian_CV_20220228.pdf) to download PDF
-
-![LenaKilian_CV](/cv/LenaKilian_CV_20220228.pdf "LenaKilian_CV")
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vRLXWBk38ufZ4EQbpYVBaTLB6TYebFcefsX33VTYO9KC5XoLKCp8sMWIX-vL5OcQQ/pub?embedded=true"></iframe>
