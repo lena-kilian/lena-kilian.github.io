@@ -1,5 +1,3 @@
 # CV
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vRLXWBk38ufZ4EQbpYVBaTLB6TYebFcefsX33VTYO9KC5XoLKCp8sMWIX-vL5OcQQ/pub?embedded=true">
-height= "500px" width= "100%"
-</iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vRLXWBk38ufZ4EQbpYVBaTLB6TYebFcefsX33VTYO9KC5XoLKCp8sMWIX-vL5OcQQ/pub?embedded=true" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>
