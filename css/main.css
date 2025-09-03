@@ -104,12 +104,13 @@ a {
 }
 
 a:hover {
-    color: #96B4D9;
+    color: #5083C1;
 }
 
 title_main {
     font-size: 1.9em;
     font-family: 'Helvetica';
+    font-weight: bold;
     color: #5083C1;
     padding: 0px 16px 0px 0px;
 }
