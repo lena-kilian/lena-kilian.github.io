@@ -13,7 +13,7 @@ title {
  /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #5083C1;
+  background-color: #96B4D9;
   font-family:'Helvetica Neue';
   color: #ffffff;
 }
@@ -48,7 +48,7 @@ title {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #666666;
+  background-color: #5083C1;
   color: #ffffff;
 }
 
@@ -104,13 +104,13 @@ a {
 }
 
 a:hover {
-    color: #9CAF88;
+    color: #96B4D9;
 }
 
 title_main {
     font-size: 1.9em;
-    font-family:'Courier';
-    color: #9CAF88;
+    font-family: 'Helvetica';
+    color: #5083C1;
     padding: 0px 16px 0px 0px;
 }
 
